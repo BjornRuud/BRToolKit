@@ -116,4 +116,22 @@ class PropertyObservableTests: XCTestCase {
         XCTAssertTrue(observedDidSet1)
         XCTAssertTrue(observedDidSet2)
     }
+
+    func testObservationQueue() {
+        let exp = expectation(description: "")
+        let queue = DispatchQueue.global(qos: .userInitiated)
+        var observedDidSet = false
+
+        observer = book.observeDidSet(property: titleProperty, queue: queue) { (change) in
+            XCTAssertFalse(Thread.isMainThread)
+            XCTAssertTrue(change.oldValue == self.oldTitle)
+            XCTAssertTrue(change.newValue == self.newTitle)
+            observedDidSet = true
+            exp.fulfill()
+        }
+
+        book.title = newTitle
+        waitForExpectations(timeout: 2)
+        XCTAssertTrue(observedDidSet)
+    }
 }

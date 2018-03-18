@@ -51,32 +51,39 @@ public protocol PropertyObservable: class {
      Register an observation closure for a property event on this object.
 
      - Parameter property: The property `KeyPath`.
+     - Parameter queue: Optional dispatch queue to execute the observation on. If no queue
+                        is provided the observation is executed on the same thread that triggered
+                        the property event.
      - Parameter observation: A closure that will be called for all events for this `KeyPath`.
 
      - Returns: An opaque object representing the observation.
                 The observation has the same lifetime as the returned `PropertyObserver` object.
      */
-    func observe<T, V>(property: KeyPath<T, V>, observation: @escaping PropertyObservation<V>) -> PropertyObserver
+    func observe<T, V>(property: KeyPath<T, V>, queue: DispatchQueue?, observation: @escaping PropertyObservation<V>) -> PropertyObserver
 
     /**
      Convenience function to only observe `willSet` events.
 
      - Parameter property: The property `KeyPath`.
+     - Parameter queue: Optional dispatch queue for the observation closure.
+                        See `observe(property:queue:observation:)` for details.
      - Parameter observation: A closure that will be called with the change involved in the `willSet` event for this property.
 
      - Returns: An opaque object representing the observation.
      */
-    func observeWillSet<T, V>(property: KeyPath<T, V>, observation: @escaping (PropertyChange<V>) -> Void) -> PropertyObserver
+    func observeWillSet<T, V>(property: KeyPath<T, V>, queue: DispatchQueue?, observation: @escaping (PropertyChange<V>) -> Void) -> PropertyObserver
 
     /**
      Convenience function to only observe `didSet` events.
 
      - Parameter property: The property `KeyPath`.
+     - Parameter queue: Optional dispatch queue for the observation closure.
+                        See `observe(property:queue:observation:)` for details.
      - Parameter observation: A closure that will be called with the change involved in the `didSet` event for this property.
 
      - Returns: An opaque object representing the observation.
      */
-    func observeDidSet<T, V>(property: KeyPath<T, V>, observation: @escaping (PropertyChange<V>) -> Void) -> PropertyObserver
+    func observeDidSet<T, V>(property: KeyPath<T, V>, queue: DispatchQueue?, observation: @escaping (PropertyChange<V>) -> Void) -> PropertyObserver
 
     /**
      Signals observers that a `PropertyEvent` happened for a `KeyPath` on this object.
@@ -112,20 +119,20 @@ public protocol PropertyObservable: class {
  `propertyEvent(_:_:)` since the rest are convenience wrappers.
 */
 public extension PropertyObservable {
-    public func observe<T, V>(property: KeyPath<T, V>, observation: @escaping PropertyObservation<V>) -> PropertyObserver {
-        return PropertyObserverManager.shared.observe(object: self, property: property, observation: observation)
+    public func observe<T, V>(property: KeyPath<T, V>, queue: DispatchQueue? = nil, observation: @escaping PropertyObservation<V>) -> PropertyObserver {
+        return PropertyObserverManager.shared.observe(object: self, property: property, queue: queue, observation: observation)
     }
 
-    public func observeWillSet<T, V>(property: KeyPath<T, V>, observation: @escaping (PropertyChange<V>) -> Void) -> PropertyObserver {
-        return observe(property: property) { (event) in
+    public func observeWillSet<T, V>(property: KeyPath<T, V>, queue: DispatchQueue? = nil, observation: @escaping (PropertyChange<V>) -> Void) -> PropertyObserver {
+        return observe(property: property, queue: queue) { (event) in
             if case .willSet(let change) = event {
                 observation(change)
             }
         }
     }
 
-    public func observeDidSet<T, V>(property: KeyPath<T, V>, observation: @escaping (PropertyChange<V>) -> Void) -> PropertyObserver {
-        return observe(property: property) { (event) in
+    public func observeDidSet<T, V>(property: KeyPath<T, V>, queue: DispatchQueue? = nil, observation: @escaping (PropertyChange<V>) -> Void) -> PropertyObserver {
+        return observe(property: property, queue: queue) { (event) in
             if case .didSet(let change) = event {
                 observation(change)
             }
@@ -149,9 +156,11 @@ fileprivate final class PropertyObserverManager {
 
     private final class ObservationWrapper {
         let typeErasedObservation: Any
+        let queue: DispatchQueue?
 
-        init(observation: Any) {
+        init(observation: Any, queue: DispatchQueue?) {
             self.typeErasedObservation = observation
+            self.queue = queue
         }
     }
 
@@ -199,11 +208,18 @@ fileprivate final class PropertyObserverManager {
                 assertionFailure("Observation value types should match.")
                 return
             }
-            observation(event)
+
+            if let queue = wrapper.queue {
+                queue.async {
+                    observation(event)
+                }
+            } else {
+                observation(event)
+            }
         }
     }
 
-    func observe<T, V>(object: AnyObject, property: KeyPath<T, V>, observation: @escaping PropertyObservation<V>) -> PropertyObserver {
+    func observe<T, V>(object: AnyObject, property: KeyPath<T, V>, queue: DispatchQueue? = nil, observation: @escaping PropertyObservation<V>) -> PropertyObserver {
         lock.lock()
         defer { lock.unlock() }
 
@@ -212,7 +228,7 @@ fileprivate final class PropertyObserverManager {
         let observer = PropertyObserver(key: key, manager: self)
 
         var observations = observerMap[key] ?? [:]
-        observations[observer.observationID] = ObservationWrapper(observation: observation)
+        observations[observer.observationID] = ObservationWrapper(observation: observation, queue: queue)
         observerMap[key] = observations
 
         return observer
