@@ -8,6 +8,13 @@
 
 /* Begin PBXBuildFile section */
 		52D6D9871BEFF229002C0205 /* BRToolKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 52D6D97C1BEFF229002C0205 /* BRToolKit.framework */; };
+		8E67ED7C205EA6D500D3A57F /* PropertyObservable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E67ED7B205EA6D500D3A57F /* PropertyObservable.swift */; };
+		8E67ED7D205EA6D500D3A57F /* PropertyObservable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E67ED7B205EA6D500D3A57F /* PropertyObservable.swift */; };
+		8E67ED7E205EA6D500D3A57F /* PropertyObservable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E67ED7B205EA6D500D3A57F /* PropertyObservable.swift */; };
+		8E67ED7F205EA6D500D3A57F /* PropertyObservable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E67ED7B205EA6D500D3A57F /* PropertyObservable.swift */; };
+		8E67ED86205EA8A300D3A57F /* PropertyObservableTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E67ED81205EA87100D3A57F /* PropertyObservableTests.swift */; };
+		8E67ED87205EA8A300D3A57F /* PropertyObservableTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E67ED81205EA87100D3A57F /* PropertyObservableTests.swift */; };
+		8E67ED88205EA8A400D3A57F /* PropertyObservableTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E67ED81205EA87100D3A57F /* PropertyObservableTests.swift */; };
 		8EAD8F40205484EA00E8804F /* AsyncOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EAD8F3F205484EA00E8804F /* AsyncOperation.swift */; };
 		8EAD8F41205484EA00E8804F /* AsyncOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EAD8F3F205484EA00E8804F /* AsyncOperation.swift */; };
 		8EAD8F42205484EA00E8804F /* AsyncOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EAD8F3F205484EA00E8804F /* AsyncOperation.swift */; };
@@ -63,6 +70,8 @@
 		52D6D9E21BEFFF6E002C0205 /* BRToolKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = BRToolKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		52D6D9F01BEFFFBE002C0205 /* BRToolKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = BRToolKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		52D6DA0F1BF000BD002C0205 /* BRToolKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = BRToolKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8E67ED7B205EA6D500D3A57F /* PropertyObservable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PropertyObservable.swift; sourceTree = "<group>"; };
+		8E67ED81205EA87100D3A57F /* PropertyObservableTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PropertyObservableTests.swift; sourceTree = "<group>"; };
 		8EAD8F3F205484EA00E8804F /* AsyncOperation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AsyncOperation.swift; sourceTree = "<group>"; };
 		8EAD8F442054880800E8804F /* OperationGroup.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OperationGroup.swift; sourceTree = "<group>"; };
 		8EAD8F492054881700E8804F /* OperationSequence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OperationSequence.swift; sourceTree = "<group>"; };
@@ -168,6 +177,7 @@
 			isa = PBXGroup;
 			children = (
 				8EAD8F3E2054841800E8804F /* Operation */,
+				8E67ED7A205EA67900D3A57F /* PropertyObservable */,
 			);
 			path = Sources;
 			sourceTree = "<group>";
@@ -176,9 +186,26 @@
 			isa = PBXGroup;
 			children = (
 				8EAD8F4E20548B5600E8804F /* Operation */,
+				8E67ED80205EA84400D3A57F /* PropertyObservable */,
 			);
 			name = Tests;
 			path = Tests/BRToolKitTests;
+			sourceTree = "<group>";
+		};
+		8E67ED7A205EA67900D3A57F /* PropertyObservable */ = {
+			isa = PBXGroup;
+			children = (
+				8E67ED7B205EA6D500D3A57F /* PropertyObservable.swift */,
+			);
+			path = PropertyObservable;
+			sourceTree = "<group>";
+		};
+		8E67ED80205EA84400D3A57F /* PropertyObservable */ = {
+			isa = PBXGroup;
+			children = (
+				8E67ED81205EA87100D3A57F /* PropertyObservableTests.swift */,
+			);
+			path = PropertyObservable;
 			sourceTree = "<group>";
 		};
 		8EAD8F3E2054841800E8804F /* Operation */ = {
@@ -498,6 +525,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				8EAD8F4A2054881700E8804F /* OperationSequence.swift in Sources */,
+				8E67ED7C205EA6D500D3A57F /* PropertyObservable.swift in Sources */,
 				8EAD8F40205484EA00E8804F /* AsyncOperation.swift in Sources */,
 				8EAD8F452054880800E8804F /* OperationGroup.swift in Sources */,
 			);
@@ -508,6 +536,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				8EAD8F5820548C8400E8804F /* OperationSequenceTests.swift in Sources */,
+				8E67ED86205EA8A300D3A57F /* PropertyObservableTests.swift in Sources */,
 				8EAD8F5420548C2800E8804F /* OperationGroupTests.swift in Sources */,
 				8EAD8F5020548BAF00E8804F /* AsyncOperationTests.swift in Sources */,
 			);
@@ -518,6 +547,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				8EAD8F4C2054881700E8804F /* OperationSequence.swift in Sources */,
+				8E67ED7E205EA6D500D3A57F /* PropertyObservable.swift in Sources */,
 				8EAD8F42205484EA00E8804F /* AsyncOperation.swift in Sources */,
 				8EAD8F472054880800E8804F /* OperationGroup.swift in Sources */,
 			);
@@ -528,6 +558,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				8EAD8F4D2054881700E8804F /* OperationSequence.swift in Sources */,
+				8E67ED7F205EA6D500D3A57F /* PropertyObservable.swift in Sources */,
 				8EAD8F43205484EA00E8804F /* AsyncOperation.swift in Sources */,
 				8EAD8F482054880800E8804F /* OperationGroup.swift in Sources */,
 			);
@@ -538,6 +569,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				8EAD8F4B2054881700E8804F /* OperationSequence.swift in Sources */,
+				8E67ED7D205EA6D500D3A57F /* PropertyObservable.swift in Sources */,
 				8EAD8F41205484EA00E8804F /* AsyncOperation.swift in Sources */,
 				8EAD8F462054880800E8804F /* OperationGroup.swift in Sources */,
 			);
@@ -548,6 +580,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				8EAD8F5920548C8400E8804F /* OperationSequenceTests.swift in Sources */,
+				8E67ED87205EA8A300D3A57F /* PropertyObservableTests.swift in Sources */,
 				8EAD8F5520548C2800E8804F /* OperationGroupTests.swift in Sources */,
 				8EAD8F5120548BAF00E8804F /* AsyncOperationTests.swift in Sources */,
 			);
@@ -558,6 +591,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				8EAD8F5A20548C8400E8804F /* OperationSequenceTests.swift in Sources */,
+				8E67ED88205EA8A400D3A57F /* PropertyObservableTests.swift in Sources */,
 				8EAD8F5620548C2800E8804F /* OperationGroupTests.swift in Sources */,
 				8EAD8F5220548BAF00E8804F /* AsyncOperationTests.swift in Sources */,
 			);
