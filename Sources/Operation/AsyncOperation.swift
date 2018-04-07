@@ -9,6 +9,12 @@
 import Foundation
 
 class AsyncOperation: Operation {
+    enum State: String {
+        case ready = "isReady"
+        case executing = "isExecuting"
+        case finished = "isFinished"
+    }
+
     typealias Completion = (AsyncOperation) -> Void
     typealias Execution = (AsyncOperation) -> Void
 
@@ -36,28 +42,50 @@ class AsyncOperation: Operation {
     /// when the work is done.
     var execution: Execution?
 
-    private let semaphore = DispatchSemaphore(value: 0)
+    override var isAsynchronous: Bool {
+        return true
+    }
+
+    override var isExecuting: Bool {
+        return state == .executing
+    }
+
+    override var isFinished: Bool {
+        return state == .finished
+    }
+
+    private var _state: State = .ready
+
+    private var state: State {
+        get {
+            return _state
+        }
+        set {
+            let key = newValue.rawValue
+            willChangeValue(forKey: key)
+            _state = newValue
+            didChangeValue(forKey: key)
+        }
+    }
 
     init(_ execution: Execution? = nil) {
         self.execution = execution
     }
 
-    override func main() {
-        defer {
-            execution = nil
-            completion?(self)
-            completion = nil
-        }
-
+    override func start() {
         guard !isCancelled, let execution = execution else {
+            finish()
             return
         }
 
+        state = .executing
         execution(self)
-        semaphore.wait()
     }
 
     func finish() {
-        semaphore.signal()
+        execution = nil
+        completion?(self)
+        completion = nil
+        state = .finished
     }
 }
