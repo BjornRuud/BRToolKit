@@ -12,6 +12,12 @@
 		8E32425820798C2A0037481F /* UIColor+Hex.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E32425620798C2A0037481F /* UIColor+Hex.swift */; };
 		8E32425920798C2A0037481F /* UIColor+Hex.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E32425620798C2A0037481F /* UIColor+Hex.swift */; };
 		8E32425A20798C2A0037481F /* UIColor+Hex.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E32425620798C2A0037481F /* UIColor+Hex.swift */; };
+		8E4D456C2095EEA600FBA348 /* UnfairLockTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E4D456B2095EEA600FBA348 /* UnfairLockTests.swift */; };
+		8E4D456D2095EEA600FBA348 /* UnfairLockTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E4D456B2095EEA600FBA348 /* UnfairLockTests.swift */; };
+		8E4D456E2095EEA600FBA348 /* UnfairLockTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E4D456B2095EEA600FBA348 /* UnfairLockTests.swift */; };
+		8E4D45702095F55200FBA348 /* MutexLockTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E4D456F2095F55200FBA348 /* MutexLockTests.swift */; };
+		8E4D45712095F55200FBA348 /* MutexLockTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E4D456F2095F55200FBA348 /* MutexLockTests.swift */; };
+		8E4D45722095F55200FBA348 /* MutexLockTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E4D456F2095F55200FBA348 /* MutexLockTests.swift */; };
 		8E67ED7C205EA6D500D3A57F /* PropertyObservable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E67ED7B205EA6D500D3A57F /* PropertyObservable.swift */; };
 		8E67ED7D205EA6D500D3A57F /* PropertyObservable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E67ED7B205EA6D500D3A57F /* PropertyObservable.swift */; };
 		8E67ED7E205EA6D500D3A57F /* PropertyObservable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E67ED7B205EA6D500D3A57F /* PropertyObservable.swift */; };
@@ -19,6 +25,18 @@
 		8E67ED86205EA8A300D3A57F /* PropertyObservableTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E67ED81205EA87100D3A57F /* PropertyObservableTests.swift */; };
 		8E67ED87205EA8A300D3A57F /* PropertyObservableTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E67ED81205EA87100D3A57F /* PropertyObservableTests.swift */; };
 		8E67ED88205EA8A400D3A57F /* PropertyObservableTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E67ED81205EA87100D3A57F /* PropertyObservableTests.swift */; };
+		8E801DE02095159A00E5424A /* UnfairLock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E801DDF2095159A00E5424A /* UnfairLock.swift */; };
+		8E801DE12095159A00E5424A /* UnfairLock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E801DDF2095159A00E5424A /* UnfairLock.swift */; };
+		8E801DE22095159A00E5424A /* UnfairLock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E801DDF2095159A00E5424A /* UnfairLock.swift */; };
+		8E801DE32095159A00E5424A /* UnfairLock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E801DDF2095159A00E5424A /* UnfairLock.swift */; };
+		8E801DE520951F8100E5424A /* Lockable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E801DE420951F8100E5424A /* Lockable.swift */; };
+		8E801DE620951F8100E5424A /* Lockable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E801DE420951F8100E5424A /* Lockable.swift */; };
+		8E801DE720951F8100E5424A /* Lockable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E801DE420951F8100E5424A /* Lockable.swift */; };
+		8E801DE820951F8100E5424A /* Lockable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E801DE420951F8100E5424A /* Lockable.swift */; };
+		8E801DEA20951FC400E5424A /* MutexLock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E801DE920951FC400E5424A /* MutexLock.swift */; };
+		8E801DEB20951FC400E5424A /* MutexLock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E801DE920951FC400E5424A /* MutexLock.swift */; };
+		8E801DEC20951FC400E5424A /* MutexLock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E801DE920951FC400E5424A /* MutexLock.swift */; };
+		8E801DED20951FC400E5424A /* MutexLock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E801DE920951FC400E5424A /* MutexLock.swift */; };
 		8EAD8F40205484EA00E8804F /* AsyncOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EAD8F3F205484EA00E8804F /* AsyncOperation.swift */; };
 		8EAD8F41205484EA00E8804F /* AsyncOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EAD8F3F205484EA00E8804F /* AsyncOperation.swift */; };
 		8EAD8F42205484EA00E8804F /* AsyncOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EAD8F3F205484EA00E8804F /* AsyncOperation.swift */; };
@@ -78,8 +96,13 @@
 		52D6D9F01BEFFFBE002C0205 /* BRToolKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = BRToolKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		52D6DA0F1BF000BD002C0205 /* BRToolKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = BRToolKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8E32425620798C2A0037481F /* UIColor+Hex.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Hex.swift"; sourceTree = "<group>"; };
+		8E4D456B2095EEA600FBA348 /* UnfairLockTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UnfairLockTests.swift; sourceTree = "<group>"; };
+		8E4D456F2095F55200FBA348 /* MutexLockTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MutexLockTests.swift; sourceTree = "<group>"; };
 		8E67ED7B205EA6D500D3A57F /* PropertyObservable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PropertyObservable.swift; sourceTree = "<group>"; };
 		8E67ED81205EA87100D3A57F /* PropertyObservableTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PropertyObservableTests.swift; sourceTree = "<group>"; };
+		8E801DDF2095159A00E5424A /* UnfairLock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UnfairLock.swift; sourceTree = "<group>"; };
+		8E801DE420951F8100E5424A /* Lockable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Lockable.swift; sourceTree = "<group>"; };
+		8E801DE920951FC400E5424A /* MutexLock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MutexLock.swift; sourceTree = "<group>"; };
 		8EAD8F3F205484EA00E8804F /* AsyncOperation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AsyncOperation.swift; sourceTree = "<group>"; };
 		8EAD8F442054880800E8804F /* OperationGroup.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OperationGroup.swift; sourceTree = "<group>"; };
 		8EAD8F492054881700E8804F /* OperationSequence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OperationSequence.swift; sourceTree = "<group>"; };
@@ -188,6 +211,7 @@
 				8E32425520798BF20037481F /* Color */,
 				8EAD8F3E2054841800E8804F /* Operation */,
 				8E67ED7A205EA67900D3A57F /* PropertyObservable */,
+				8E801DDE2095157900E5424A /* Synchronization */,
 			);
 			path = Sources;
 			sourceTree = "<group>";
@@ -198,6 +222,7 @@
 				8EFC4DC4207AADAB00630DC4 /* Color */,
 				8EAD8F4E20548B5600E8804F /* Operation */,
 				8E67ED80205EA84400D3A57F /* PropertyObservable */,
+				8E4D456A2095EE7200FBA348 /* Synchronization */,
 			);
 			name = Tests;
 			path = Tests/BRToolKitTests;
@@ -209,6 +234,15 @@
 				8E32425620798C2A0037481F /* UIColor+Hex.swift */,
 			);
 			path = Color;
+			sourceTree = "<group>";
+		};
+		8E4D456A2095EE7200FBA348 /* Synchronization */ = {
+			isa = PBXGroup;
+			children = (
+				8E4D456B2095EEA600FBA348 /* UnfairLockTests.swift */,
+				8E4D456F2095F55200FBA348 /* MutexLockTests.swift */,
+			);
+			path = Synchronization;
 			sourceTree = "<group>";
 		};
 		8E67ED7A205EA67900D3A57F /* PropertyObservable */ = {
@@ -225,6 +259,16 @@
 				8E67ED81205EA87100D3A57F /* PropertyObservableTests.swift */,
 			);
 			path = PropertyObservable;
+			sourceTree = "<group>";
+		};
+		8E801DDE2095157900E5424A /* Synchronization */ = {
+			isa = PBXGroup;
+			children = (
+				8E801DE420951F8100E5424A /* Lockable.swift */,
+				8E801DE920951FC400E5424A /* MutexLock.swift */,
+				8E801DDF2095159A00E5424A /* UnfairLock.swift */,
+			);
+			path = Synchronization;
 			sourceTree = "<group>";
 		};
 		8EAD8F3E2054841800E8804F /* Operation */ = {
@@ -554,7 +598,10 @@
 				8EAD8F4A2054881700E8804F /* OperationSequence.swift in Sources */,
 				8E67ED7C205EA6D500D3A57F /* PropertyObservable.swift in Sources */,
 				8EAD8F40205484EA00E8804F /* AsyncOperation.swift in Sources */,
+				8E801DE02095159A00E5424A /* UnfairLock.swift in Sources */,
 				8EAD8F452054880800E8804F /* OperationGroup.swift in Sources */,
+				8E801DE520951F8100E5424A /* Lockable.swift in Sources */,
+				8E801DEA20951FC400E5424A /* MutexLock.swift in Sources */,
 				8E32425720798C2A0037481F /* UIColor+Hex.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -564,6 +611,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				8EAD8F5820548C8400E8804F /* OperationSequenceTests.swift in Sources */,
+				8E4D456C2095EEA600FBA348 /* UnfairLockTests.swift in Sources */,
+				8E4D45702095F55200FBA348 /* MutexLockTests.swift in Sources */,
 				8E67ED86205EA8A300D3A57F /* PropertyObservableTests.swift in Sources */,
 				8EFC4DC6207AADD100630DC4 /* UIColorHexTests.swift in Sources */,
 				8EAD8F5420548C2800E8804F /* OperationGroupTests.swift in Sources */,
@@ -578,7 +627,10 @@
 				8EAD8F4C2054881700E8804F /* OperationSequence.swift in Sources */,
 				8E67ED7E205EA6D500D3A57F /* PropertyObservable.swift in Sources */,
 				8EAD8F42205484EA00E8804F /* AsyncOperation.swift in Sources */,
+				8E801DE22095159A00E5424A /* UnfairLock.swift in Sources */,
 				8EAD8F472054880800E8804F /* OperationGroup.swift in Sources */,
+				8E801DE720951F8100E5424A /* Lockable.swift in Sources */,
+				8E801DEC20951FC400E5424A /* MutexLock.swift in Sources */,
 				8E32425920798C2A0037481F /* UIColor+Hex.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -590,7 +642,10 @@
 				8EAD8F4D2054881700E8804F /* OperationSequence.swift in Sources */,
 				8E67ED7F205EA6D500D3A57F /* PropertyObservable.swift in Sources */,
 				8EAD8F43205484EA00E8804F /* AsyncOperation.swift in Sources */,
+				8E801DE32095159A00E5424A /* UnfairLock.swift in Sources */,
 				8EAD8F482054880800E8804F /* OperationGroup.swift in Sources */,
+				8E801DE820951F8100E5424A /* Lockable.swift in Sources */,
+				8E801DED20951FC400E5424A /* MutexLock.swift in Sources */,
 				8E32425A20798C2A0037481F /* UIColor+Hex.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -602,7 +657,10 @@
 				8EAD8F4B2054881700E8804F /* OperationSequence.swift in Sources */,
 				8E67ED7D205EA6D500D3A57F /* PropertyObservable.swift in Sources */,
 				8EAD8F41205484EA00E8804F /* AsyncOperation.swift in Sources */,
+				8E801DE12095159A00E5424A /* UnfairLock.swift in Sources */,
 				8EAD8F462054880800E8804F /* OperationGroup.swift in Sources */,
+				8E801DE620951F8100E5424A /* Lockable.swift in Sources */,
+				8E801DEB20951FC400E5424A /* MutexLock.swift in Sources */,
 				8E32425820798C2A0037481F /* UIColor+Hex.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -612,6 +670,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				8EAD8F5920548C8400E8804F /* OperationSequenceTests.swift in Sources */,
+				8E4D456D2095EEA600FBA348 /* UnfairLockTests.swift in Sources */,
+				8E4D45712095F55200FBA348 /* MutexLockTests.swift in Sources */,
 				8E67ED87205EA8A300D3A57F /* PropertyObservableTests.swift in Sources */,
 				8EFC4DC7207AADD100630DC4 /* UIColorHexTests.swift in Sources */,
 				8EAD8F5520548C2800E8804F /* OperationGroupTests.swift in Sources */,
@@ -624,6 +684,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				8EAD8F5A20548C8400E8804F /* OperationSequenceTests.swift in Sources */,
+				8E4D456E2095EEA600FBA348 /* UnfairLockTests.swift in Sources */,
+				8E4D45722095F55200FBA348 /* MutexLockTests.swift in Sources */,
 				8E67ED88205EA8A400D3A57F /* PropertyObservableTests.swift in Sources */,
 				8EFC4DC8207AADD100630DC4 /* UIColorHexTests.swift in Sources */,
 				8EAD8F5620548C2800E8804F /* OperationGroupTests.swift in Sources */,
@@ -697,7 +759,8 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -748,7 +811,8 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				SWIFT_VERSION = 4.0;
@@ -771,7 +835,7 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = Configs/BRToolKit.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				ONLY_ACTIVE_ARCH = NO;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.BRToolKit.BRToolKit-iOS";
@@ -794,7 +858,7 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = Configs/BRToolKit.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.BRToolKit.BRToolKit-iOS";
 				PRODUCT_NAME = BRToolKit;
@@ -852,7 +916,7 @@
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = 4;
-				WATCHOS_DEPLOYMENT_TARGET = 2.0;
+				WATCHOS_DEPLOYMENT_TARGET = 3.0;
 			};
 			name = Debug;
 		};
@@ -876,7 +940,7 @@
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = 4;
-				WATCHOS_DEPLOYMENT_TARGET = 2.0;
+				WATCHOS_DEPLOYMENT_TARGET = 3.0;
 			};
 			name = Release;
 		};
@@ -900,7 +964,7 @@
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = 3;
-				TVOS_DEPLOYMENT_TARGET = 9.0;
+				TVOS_DEPLOYMENT_TARGET = 10.0;
 			};
 			name = Debug;
 		};
@@ -924,7 +988,7 @@
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = 3;
-				TVOS_DEPLOYMENT_TARGET = 9.0;
+				TVOS_DEPLOYMENT_TARGET = 10.0;
 			};
 			name = Release;
 		};
@@ -943,7 +1007,7 @@
 				INFOPLIST_FILE = Configs/BRToolKit.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
-				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.BRToolKit.BRToolKit-macOS";
 				PRODUCT_NAME = BRToolKit;
 				SDKROOT = macosx;
@@ -968,7 +1032,7 @@
 				INFOPLIST_FILE = Configs/BRToolKit.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
-				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.BRToolKit.BRToolKit-macOS";
 				PRODUCT_NAME = BRToolKit;
 				SDKROOT = macosx;
