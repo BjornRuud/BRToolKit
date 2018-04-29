@@ -8,6 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		52D6D9871BEFF229002C0205 /* BRToolKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 52D6D97C1BEFF229002C0205 /* BRToolKit.framework */; };
+		8E32425720798C2A0037481F /* UIColor+Hex.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E32425620798C2A0037481F /* UIColor+Hex.swift */; };
+		8E32425820798C2A0037481F /* UIColor+Hex.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E32425620798C2A0037481F /* UIColor+Hex.swift */; };
+		8E32425920798C2A0037481F /* UIColor+Hex.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E32425620798C2A0037481F /* UIColor+Hex.swift */; };
+		8E32425A20798C2A0037481F /* UIColor+Hex.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E32425620798C2A0037481F /* UIColor+Hex.swift */; };
 		8E67ED7C205EA6D500D3A57F /* PropertyObservable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E67ED7B205EA6D500D3A57F /* PropertyObservable.swift */; };
 		8E67ED7D205EA6D500D3A57F /* PropertyObservable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E67ED7B205EA6D500D3A57F /* PropertyObservable.swift */; };
 		8E67ED7E205EA6D500D3A57F /* PropertyObservable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E67ED7B205EA6D500D3A57F /* PropertyObservable.swift */; };
@@ -36,6 +40,9 @@
 		8EAD8F5820548C8400E8804F /* OperationSequenceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EAD8F5720548C8400E8804F /* OperationSequenceTests.swift */; };
 		8EAD8F5920548C8400E8804F /* OperationSequenceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EAD8F5720548C8400E8804F /* OperationSequenceTests.swift */; };
 		8EAD8F5A20548C8400E8804F /* OperationSequenceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EAD8F5720548C8400E8804F /* OperationSequenceTests.swift */; };
+		8EFC4DC6207AADD100630DC4 /* UIColorHexTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EFC4DC5207AADD100630DC4 /* UIColorHexTests.swift */; };
+		8EFC4DC7207AADD100630DC4 /* UIColorHexTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EFC4DC5207AADD100630DC4 /* UIColorHexTests.swift */; };
+		8EFC4DC8207AADD100630DC4 /* UIColorHexTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EFC4DC5207AADD100630DC4 /* UIColorHexTests.swift */; };
 		DD7502881C68FEDE006590AF /* BRToolKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 52D6DA0F1BF000BD002C0205 /* BRToolKit.framework */; };
 		DD7502921C690C7A006590AF /* BRToolKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 52D6D9F01BEFFFBE002C0205 /* BRToolKit.framework */; };
 /* End PBXBuildFile section */
@@ -70,6 +77,7 @@
 		52D6D9E21BEFFF6E002C0205 /* BRToolKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = BRToolKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		52D6D9F01BEFFFBE002C0205 /* BRToolKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = BRToolKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		52D6DA0F1BF000BD002C0205 /* BRToolKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = BRToolKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8E32425620798C2A0037481F /* UIColor+Hex.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Hex.swift"; sourceTree = "<group>"; };
 		8E67ED7B205EA6D500D3A57F /* PropertyObservable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PropertyObservable.swift; sourceTree = "<group>"; };
 		8E67ED81205EA87100D3A57F /* PropertyObservableTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PropertyObservableTests.swift; sourceTree = "<group>"; };
 		8EAD8F3F205484EA00E8804F /* AsyncOperation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AsyncOperation.swift; sourceTree = "<group>"; };
@@ -78,6 +86,7 @@
 		8EAD8F4F20548BAF00E8804F /* AsyncOperationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AsyncOperationTests.swift; sourceTree = "<group>"; };
 		8EAD8F5320548C2800E8804F /* OperationGroupTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OperationGroupTests.swift; sourceTree = "<group>"; };
 		8EAD8F5720548C8400E8804F /* OperationSequenceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OperationSequenceTests.swift; sourceTree = "<group>"; };
+		8EFC4DC5207AADD100630DC4 /* UIColorHexTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColorHexTests.swift; sourceTree = "<group>"; };
 		AD2FAA261CD0B6D800659CF4 /* BRToolKit.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = BRToolKit.plist; sourceTree = "<group>"; };
 		AD2FAA281CD0B6E100659CF4 /* BRToolKitTests.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = BRToolKitTests.plist; sourceTree = "<group>"; };
 		DD75027A1C68FCFC006590AF /* BRToolKit-macOS Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "BRToolKit-macOS Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -176,6 +185,7 @@
 		8933C7811EB5B7E0000D00A4 /* Sources */ = {
 			isa = PBXGroup;
 			children = (
+				8E32425520798BF20037481F /* Color */,
 				8EAD8F3E2054841800E8804F /* Operation */,
 				8E67ED7A205EA67900D3A57F /* PropertyObservable */,
 			);
@@ -185,11 +195,20 @@
 		8933C7831EB5B7EB000D00A4 /* Tests */ = {
 			isa = PBXGroup;
 			children = (
+				8EFC4DC4207AADAB00630DC4 /* Color */,
 				8EAD8F4E20548B5600E8804F /* Operation */,
 				8E67ED80205EA84400D3A57F /* PropertyObservable */,
 			);
 			name = Tests;
 			path = Tests/BRToolKitTests;
+			sourceTree = "<group>";
+		};
+		8E32425520798BF20037481F /* Color */ = {
+			isa = PBXGroup;
+			children = (
+				8E32425620798C2A0037481F /* UIColor+Hex.swift */,
+			);
+			path = Color;
 			sourceTree = "<group>";
 		};
 		8E67ED7A205EA67900D3A57F /* PropertyObservable */ = {
@@ -226,6 +245,14 @@
 				8EAD8F5720548C8400E8804F /* OperationSequenceTests.swift */,
 			);
 			path = Operation;
+			sourceTree = "<group>";
+		};
+		8EFC4DC4207AADAB00630DC4 /* Color */ = {
+			isa = PBXGroup;
+			children = (
+				8EFC4DC5207AADD100630DC4 /* UIColorHexTests.swift */,
+			);
+			path = Color;
 			sourceTree = "<group>";
 		};
 		DD7502721C68FC1B006590AF /* Frameworks */ = {
@@ -528,6 +555,7 @@
 				8E67ED7C205EA6D500D3A57F /* PropertyObservable.swift in Sources */,
 				8EAD8F40205484EA00E8804F /* AsyncOperation.swift in Sources */,
 				8EAD8F452054880800E8804F /* OperationGroup.swift in Sources */,
+				8E32425720798C2A0037481F /* UIColor+Hex.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -537,6 +565,7 @@
 			files = (
 				8EAD8F5820548C8400E8804F /* OperationSequenceTests.swift in Sources */,
 				8E67ED86205EA8A300D3A57F /* PropertyObservableTests.swift in Sources */,
+				8EFC4DC6207AADD100630DC4 /* UIColorHexTests.swift in Sources */,
 				8EAD8F5420548C2800E8804F /* OperationGroupTests.swift in Sources */,
 				8EAD8F5020548BAF00E8804F /* AsyncOperationTests.swift in Sources */,
 			);
@@ -550,6 +579,7 @@
 				8E67ED7E205EA6D500D3A57F /* PropertyObservable.swift in Sources */,
 				8EAD8F42205484EA00E8804F /* AsyncOperation.swift in Sources */,
 				8EAD8F472054880800E8804F /* OperationGroup.swift in Sources */,
+				8E32425920798C2A0037481F /* UIColor+Hex.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -561,6 +591,7 @@
 				8E67ED7F205EA6D500D3A57F /* PropertyObservable.swift in Sources */,
 				8EAD8F43205484EA00E8804F /* AsyncOperation.swift in Sources */,
 				8EAD8F482054880800E8804F /* OperationGroup.swift in Sources */,
+				8E32425A20798C2A0037481F /* UIColor+Hex.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -572,6 +603,7 @@
 				8E67ED7D205EA6D500D3A57F /* PropertyObservable.swift in Sources */,
 				8EAD8F41205484EA00E8804F /* AsyncOperation.swift in Sources */,
 				8EAD8F462054880800E8804F /* OperationGroup.swift in Sources */,
+				8E32425820798C2A0037481F /* UIColor+Hex.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -581,6 +613,7 @@
 			files = (
 				8EAD8F5920548C8400E8804F /* OperationSequenceTests.swift in Sources */,
 				8E67ED87205EA8A300D3A57F /* PropertyObservableTests.swift in Sources */,
+				8EFC4DC7207AADD100630DC4 /* UIColorHexTests.swift in Sources */,
 				8EAD8F5520548C2800E8804F /* OperationGroupTests.swift in Sources */,
 				8EAD8F5120548BAF00E8804F /* AsyncOperationTests.swift in Sources */,
 			);
@@ -592,6 +625,7 @@
 			files = (
 				8EAD8F5A20548C8400E8804F /* OperationSequenceTests.swift in Sources */,
 				8E67ED88205EA8A400D3A57F /* PropertyObservableTests.swift in Sources */,
+				8EFC4DC8207AADD100630DC4 /* UIColorHexTests.swift in Sources */,
 				8EAD8F5620548C2800E8804F /* OperationGroupTests.swift in Sources */,
 				8EAD8F5220548BAF00E8804F /* AsyncOperationTests.swift in Sources */,
 			);
