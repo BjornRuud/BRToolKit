@@ -6,10 +6,11 @@
 //  Copyright © 2018 BRToolKit. All rights reserved.
 //
 
+#if !os(macOS)
 import UIKit
 
 public extension UIColor {
-    public enum HexPrefix {
+    enum HexPrefix {
         case pound
         case hexadecimal
         case custom(String)
@@ -26,7 +27,7 @@ public extension UIColor {
         }
     }
 
-    public func hex(withAlpha: Bool = false, prefix: HexPrefix = .custom("")) -> String {
+    func hex(withAlpha: Bool = false, prefix: HexPrefix = .custom("")) -> String {
         let rgb = rgbInt32(withAlpha: withAlpha)
         let byteCount: UInt8 = withAlpha ? 8 : 6
         let format = "\(prefix.rawValue)%0\(byteCount)x"
@@ -34,7 +35,7 @@ public extension UIColor {
         return String(format: format, rgb)
     }
 
-    public func rgbInt32(withAlpha: Bool = false) -> UInt32 {
+    func rgbInt32(withAlpha: Bool = false) -> UInt32 {
         var red: CGFloat = 0
         var green: CGFloat = 0
         var blue: CGFloat = 0
@@ -63,7 +64,7 @@ public extension UIColor {
         return try! NSRegularExpression(pattern: pattern, options: [])
     }()
 
-    public convenience init?(hexString: String) {
+    convenience init?(hexString: String) {
         let regex = UIColor.hexRegex
         let fullRange = NSMakeRange(0, hexString.count)
 
@@ -95,3 +96,4 @@ public extension UIColor {
         self.init(red: red, green: green, blue: blue, alpha: alpha)
     }
 }
+#endif

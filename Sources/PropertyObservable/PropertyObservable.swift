@@ -119,11 +119,11 @@ public protocol PropertyObservable: class {
  `propertyEvent(_:_:)` since the rest are convenience wrappers.
 */
 public extension PropertyObservable {
-    public func observe<T, V>(property: KeyPath<T, V>, queue: DispatchQueue? = nil, observation: @escaping PropertyObservation<V>) -> PropertyObserver {
+    func observe<T, V>(property: KeyPath<T, V>, queue: DispatchQueue? = nil, observation: @escaping PropertyObservation<V>) -> PropertyObserver {
         return PropertyObserverManager.shared.observe(object: self, property: property, queue: queue, observation: observation)
     }
 
-    public func observeWillSet<T, V>(property: KeyPath<T, V>, queue: DispatchQueue? = nil, observation: @escaping (PropertyChange<V>) -> Void) -> PropertyObserver {
+    func observeWillSet<T, V>(property: KeyPath<T, V>, queue: DispatchQueue? = nil, observation: @escaping (PropertyChange<V>) -> Void) -> PropertyObserver {
         return observe(property: property, queue: queue) { (event) in
             if case .willSet(let change) = event {
                 observation(change)
@@ -131,7 +131,7 @@ public extension PropertyObservable {
         }
     }
 
-    public func observeDidSet<T, V>(property: KeyPath<T, V>, queue: DispatchQueue? = nil, observation: @escaping (PropertyChange<V>) -> Void) -> PropertyObserver {
+    func observeDidSet<T, V>(property: KeyPath<T, V>, queue: DispatchQueue? = nil, observation: @escaping (PropertyChange<V>) -> Void) -> PropertyObserver {
         return observe(property: property, queue: queue) { (event) in
             if case .didSet(let change) = event {
                 observation(change)
@@ -139,15 +139,15 @@ public extension PropertyObservable {
         }
     }
 
-    public func propertyEvent<T, V>(_ property: KeyPath<T, V>, _ event: PropertyEvent<V>) {
+    func propertyEvent<T, V>(_ property: KeyPath<T, V>, _ event: PropertyEvent<V>) {
         PropertyObserverManager.shared.propertyEvent(event, for: property, on: self)
     }
 
-    public func propertyWillSet<T, V>(_ property: KeyPath<T, V>, oldValue: V, newValue: V) {
+    func propertyWillSet<T, V>(_ property: KeyPath<T, V>, oldValue: V, newValue: V) {
         propertyEvent(property, .willSet(PropertyChange(oldValue: oldValue, newValue: newValue)))
     }
 
-    public func propertyDidSet<T, V>(_ property: KeyPath<T, V>, oldValue: V, newValue: V) {
+    func propertyDidSet<T, V>(_ property: KeyPath<T, V>, oldValue: V, newValue: V) {
         propertyEvent(property, .didSet(PropertyChange(oldValue: oldValue, newValue: newValue)))
     }
 }
@@ -182,8 +182,9 @@ fileprivate final class PropertyObserverManager {
 
         // MARK: Hashable
 
-        var hashValue: Int {
-            return objectID.hashValue ^ property.hashValue
+        func hash(into hasher: inout Hasher) {
+            hasher.combine(objectID)
+            hasher.combine(property)
         }
     }
 
