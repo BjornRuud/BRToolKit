@@ -72,6 +72,10 @@
 		8EE96E0C24C725FF00D83DF6 /* StoreTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EE96E0B24C725FF00D83DF6 /* StoreTests.swift */; };
 		8EE96E0D24C725FF00D83DF6 /* StoreTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EE96E0B24C725FF00D83DF6 /* StoreTests.swift */; };
 		8EE96E0E24C725FF00D83DF6 /* StoreTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EE96E0B24C725FF00D83DF6 /* StoreTests.swift */; };
+		8EF90C1E24D049DD00C0361A /* Store+SwiftUI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EF90C1D24D049DD00C0361A /* Store+SwiftUI.swift */; };
+		8EF90C1F24D049DD00C0361A /* Store+SwiftUI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EF90C1D24D049DD00C0361A /* Store+SwiftUI.swift */; };
+		8EF90C2024D049DD00C0361A /* Store+SwiftUI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EF90C1D24D049DD00C0361A /* Store+SwiftUI.swift */; };
+		8EF90C2124D049DD00C0361A /* Store+SwiftUI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EF90C1D24D049DD00C0361A /* Store+SwiftUI.swift */; };
 		8EFC4DC6207AADD100630DC4 /* UIColorHexTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EFC4DC5207AADD100630DC4 /* UIColorHexTests.swift */; };
 		8EFC4DC8207AADD100630DC4 /* UIColorHexTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EFC4DC5207AADD100630DC4 /* UIColorHexTests.swift */; };
 		DD7502881C68FEDE006590AF /* BRToolKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 52D6DA0F1BF000BD002C0205 /* BRToolKit.framework */; };
@@ -126,6 +130,7 @@
 		8EBC57FE248588A10066D7C6 /* Store.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Store.swift; sourceTree = "<group>"; };
 		8EE96E0724C71F4100D83DF6 /* ReducerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReducerTests.swift; sourceTree = "<group>"; };
 		8EE96E0B24C725FF00D83DF6 /* StoreTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoreTests.swift; sourceTree = "<group>"; };
+		8EF90C1D24D049DD00C0361A /* Store+SwiftUI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Store+SwiftUI.swift"; sourceTree = "<group>"; };
 		8EFC4DC5207AADD100630DC4 /* UIColorHexTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColorHexTests.swift; sourceTree = "<group>"; };
 		AD2FAA261CD0B6D800659CF4 /* BRToolKit.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = BRToolKit.plist; sourceTree = "<group>"; };
 		AD2FAA281CD0B6E100659CF4 /* BRToolKitTests.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = BRToolKitTests.plist; sourceTree = "<group>"; };
@@ -315,6 +320,7 @@
 			children = (
 				8EB133C424A780780040B269 /* Reducer.swift */,
 				8EBC57FE248588A10066D7C6 /* Store.swift */,
+				8EF90C1D24D049DD00C0361A /* Store+SwiftUI.swift */,
 			);
 			path = State;
 			sourceTree = "<group>";
@@ -636,6 +642,7 @@
 				8EAD8F4A2054881700E8804F /* OperationSequence.swift in Sources */,
 				8E67ED7C205EA6D500D3A57F /* PropertyObservable.swift in Sources */,
 				8EAD8F40205484EA00E8804F /* AsyncOperation.swift in Sources */,
+				8EF90C1E24D049DD00C0361A /* Store+SwiftUI.swift in Sources */,
 				8E801DE02095159A00E5424A /* UnfairLock.swift in Sources */,
 				8EBC57FF248588A10066D7C6 /* Store.swift in Sources */,
 				8EAD8F452054880800E8804F /* OperationGroup.swift in Sources */,
@@ -669,6 +676,7 @@
 				8EAD8F4C2054881700E8804F /* OperationSequence.swift in Sources */,
 				8E67ED7E205EA6D500D3A57F /* PropertyObservable.swift in Sources */,
 				8EAD8F42205484EA00E8804F /* AsyncOperation.swift in Sources */,
+				8EF90C2024D049DD00C0361A /* Store+SwiftUI.swift in Sources */,
 				8E801DE22095159A00E5424A /* UnfairLock.swift in Sources */,
 				8EBC5801248588A10066D7C6 /* Store.swift in Sources */,
 				8EAD8F472054880800E8804F /* OperationGroup.swift in Sources */,
@@ -686,6 +694,7 @@
 				8EAD8F4D2054881700E8804F /* OperationSequence.swift in Sources */,
 				8E67ED7F205EA6D500D3A57F /* PropertyObservable.swift in Sources */,
 				8EAD8F43205484EA00E8804F /* AsyncOperation.swift in Sources */,
+				8EF90C2124D049DD00C0361A /* Store+SwiftUI.swift in Sources */,
 				8E801DE32095159A00E5424A /* UnfairLock.swift in Sources */,
 				8EBC5802248588A10066D7C6 /* Store.swift in Sources */,
 				8EAD8F482054880800E8804F /* OperationGroup.swift in Sources */,
@@ -703,6 +712,7 @@
 				8EAD8F4B2054881700E8804F /* OperationSequence.swift in Sources */,
 				8E67ED7D205EA6D500D3A57F /* PropertyObservable.swift in Sources */,
 				8EAD8F41205484EA00E8804F /* AsyncOperation.swift in Sources */,
+				8EF90C1F24D049DD00C0361A /* Store+SwiftUI.swift in Sources */,
 				8E801DE12095159A00E5424A /* UnfairLock.swift in Sources */,
 				8EBC5800248588A10066D7C6 /* Store.swift in Sources */,
 				8EAD8F462054880800E8804F /* OperationGroup.swift in Sources */,

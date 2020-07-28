@@ -14,6 +14,8 @@ import Foundation
 @available(OSX 10.15, iOS 13.0, tvOS 13.0, watchOS 6.0, *)
 @dynamicMemberLookup
 public final class Store<State, Action>: ObservableObject {
+    public typealias PublisherID = UUID
+
     private let publisher = PassthroughSubject<State, Never>()
 
     public private(set) var state: State {
@@ -27,7 +29,7 @@ public final class Store<State, Action>: ObservableObject {
 
     private let reducer: (inout State, Action) -> AnyPublisher<Action, Never>?
 
-    private var sideEffects: [UUID: AnyCancellable] = [:]
+    private var sideEffects: [PublisherID: AnyCancellable] = [:]
 
     public init<Environment>(
         initialState: State,
@@ -68,14 +70,34 @@ public final class Store<State, Action>: ObservableObject {
         guard let effect = reducer(&state, action) else {
             return
         }
-        let uuid = UUID()
-        sideEffects[uuid] = effect.sink(receiveCompletion: {
+        addPublisher(effect)
+    }
+
+    @discardableResult
+    public func link<InPublisher: Publisher, OutPublisher: Publisher>(
+        publisher: InPublisher,
+        setup: (InPublisher) -> OutPublisher
+    ) -> PublisherID
+    where OutPublisher.Output == Action, OutPublisher.Failure == Never {
+        return addPublisher(setup(publisher))
+    }
+
+    public func unlink(publisherID id: PublisherID) {
+        sideEffects[id] = nil
+    }
+
+    @discardableResult
+    private func addPublisher<P: Publisher>(_ publisher: P) -> PublisherID
+    where P.Output == Action, P.Failure == Never {
+        let id = PublisherID()
+        sideEffects[id] = publisher.sink(receiveCompletion: {
             [weak self] _ in
-            self?.sideEffects[uuid] = nil
+            self?.sideEffects[id] = nil
         }, receiveValue: {
             [weak self] action in
             self?.send(action)
         })
+        return id
     }
 }
 
@@ -84,7 +106,8 @@ extension Store: Publisher {
     public typealias Output = State
     public typealias Failure = Never
 
-    public func receive<S>(subscriber: S) where S : Subscriber, Failure == S.Failure, Output == S.Input {
+    public func receive<S: Subscriber>(subscriber: S)
+    where Failure == S.Failure, Output == S.Input {
         publisher.receive(subscriber: subscriber)
     }
 }
