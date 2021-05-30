@@ -8,6 +8,13 @@
 
 /* Begin PBXBuildFile section */
 		52D6D9871BEFF229002C0205 /* BRToolKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 52D6D97C1BEFF229002C0205 /* BRToolKit.framework */; };
+		8E1042B82663C9F500CBD263 /* Comparable+Clamped.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E1042B72663C9F500CBD263 /* Comparable+Clamped.swift */; };
+		8E1042B92663C9F500CBD263 /* Comparable+Clamped.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E1042B72663C9F500CBD263 /* Comparable+Clamped.swift */; };
+		8E1042BA2663C9F500CBD263 /* Comparable+Clamped.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E1042B72663C9F500CBD263 /* Comparable+Clamped.swift */; };
+		8E1042BB2663C9F500CBD263 /* Comparable+Clamped.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E1042B72663C9F500CBD263 /* Comparable+Clamped.swift */; };
+		8E1042BE2663CA5C00CBD263 /* Comparable+ClampedTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E1042BD2663CA5C00CBD263 /* Comparable+ClampedTests.swift */; };
+		8E1042BF2663CA5C00CBD263 /* Comparable+ClampedTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E1042BD2663CA5C00CBD263 /* Comparable+ClampedTests.swift */; };
+		8E1042C02663CA5C00CBD263 /* Comparable+ClampedTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E1042BD2663CA5C00CBD263 /* Comparable+ClampedTests.swift */; };
 		8E32425720798C2A0037481F /* UIColor+Hex.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E32425620798C2A0037481F /* UIColor+Hex.swift */; };
 		8E32425820798C2A0037481F /* UIColor+Hex.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E32425620798C2A0037481F /* UIColor+Hex.swift */; };
 		8E32425920798C2A0037481F /* UIColor+Hex.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E32425620798C2A0037481F /* UIColor+Hex.swift */; };
@@ -112,6 +119,8 @@
 		52D6D9E21BEFFF6E002C0205 /* BRToolKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = BRToolKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		52D6D9F01BEFFFBE002C0205 /* BRToolKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = BRToolKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		52D6DA0F1BF000BD002C0205 /* BRToolKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = BRToolKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8E1042B72663C9F500CBD263 /* Comparable+Clamped.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Comparable+Clamped.swift"; sourceTree = "<group>"; };
+		8E1042BD2663CA5C00CBD263 /* Comparable+ClampedTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Comparable+ClampedTests.swift"; sourceTree = "<group>"; };
 		8E32425620798C2A0037481F /* UIColor+Hex.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Hex.swift"; sourceTree = "<group>"; };
 		8E4D456B2095EEA600FBA348 /* UnfairLockTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UnfairLockTests.swift; sourceTree = "<group>"; };
 		8E4D456F2095F55200FBA348 /* MutexLockTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MutexLockTests.swift; sourceTree = "<group>"; };
@@ -231,6 +240,7 @@
 			isa = PBXGroup;
 			children = (
 				8E32425520798BF20037481F /* Color */,
+				8E1042B62663C9BC00CBD263 /* Extensions */,
 				8EAD8F3E2054841800E8804F /* Operation */,
 				8E67ED7A205EA67900D3A57F /* PropertyObservable */,
 				8EBC57FD2485887C0066D7C6 /* State */,
@@ -243,6 +253,7 @@
 			isa = PBXGroup;
 			children = (
 				8EFC4DC4207AADAB00630DC4 /* Color */,
+				8E1042BC2663CA2E00CBD263 /* Extensions */,
 				8EAD8F4E20548B5600E8804F /* Operation */,
 				8E67ED80205EA84400D3A57F /* PropertyObservable */,
 				8EE96E0624C71F1100D83DF6 /* State */,
@@ -250,6 +261,22 @@
 			);
 			name = Tests;
 			path = Tests/BRToolKitTests;
+			sourceTree = "<group>";
+		};
+		8E1042B62663C9BC00CBD263 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				8E1042B72663C9F500CBD263 /* Comparable+Clamped.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		8E1042BC2663CA2E00CBD263 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				8E1042BD2663CA5C00CBD263 /* Comparable+ClampedTests.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 		8E32425520798BF20037481F /* Color */ = {
@@ -525,7 +552,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0720;
-				LastUpgradeCheck = 1150;
+				LastUpgradeCheck = 1250;
 				ORGANIZATIONNAME = BRToolKit;
 				TargetAttributes = {
 					52D6D97B1BEFF229002C0205 = {
@@ -641,6 +668,7 @@
 			files = (
 				8EAD8F4A2054881700E8804F /* OperationSequence.swift in Sources */,
 				8E67ED7C205EA6D500D3A57F /* PropertyObservable.swift in Sources */,
+				8E1042B82663C9F500CBD263 /* Comparable+Clamped.swift in Sources */,
 				8EAD8F40205484EA00E8804F /* AsyncOperation.swift in Sources */,
 				8EF90C1E24D049DD00C0361A /* Store+SwiftUI.swift in Sources */,
 				8E801DE02095159A00E5424A /* UnfairLock.swift in Sources */,
@@ -663,6 +691,7 @@
 				8E4D45702095F55200FBA348 /* MutexLockTests.swift in Sources */,
 				8E67ED86205EA8A300D3A57F /* PropertyObservableTests.swift in Sources */,
 				8EFC4DC6207AADD100630DC4 /* UIColorHexTests.swift in Sources */,
+				8E1042BE2663CA5C00CBD263 /* Comparable+ClampedTests.swift in Sources */,
 				8EAD8F5420548C2800E8804F /* OperationGroupTests.swift in Sources */,
 				8EAD8F5020548BAF00E8804F /* AsyncOperationTests.swift in Sources */,
 				8EE96E0C24C725FF00D83DF6 /* StoreTests.swift in Sources */,
@@ -675,6 +704,7 @@
 			files = (
 				8EAD8F4C2054881700E8804F /* OperationSequence.swift in Sources */,
 				8E67ED7E205EA6D500D3A57F /* PropertyObservable.swift in Sources */,
+				8E1042BA2663C9F500CBD263 /* Comparable+Clamped.swift in Sources */,
 				8EAD8F42205484EA00E8804F /* AsyncOperation.swift in Sources */,
 				8EF90C2024D049DD00C0361A /* Store+SwiftUI.swift in Sources */,
 				8E801DE22095159A00E5424A /* UnfairLock.swift in Sources */,
@@ -693,6 +723,7 @@
 			files = (
 				8EAD8F4D2054881700E8804F /* OperationSequence.swift in Sources */,
 				8E67ED7F205EA6D500D3A57F /* PropertyObservable.swift in Sources */,
+				8E1042BB2663C9F500CBD263 /* Comparable+Clamped.swift in Sources */,
 				8EAD8F43205484EA00E8804F /* AsyncOperation.swift in Sources */,
 				8EF90C2124D049DD00C0361A /* Store+SwiftUI.swift in Sources */,
 				8E801DE32095159A00E5424A /* UnfairLock.swift in Sources */,
@@ -711,6 +742,7 @@
 			files = (
 				8EAD8F4B2054881700E8804F /* OperationSequence.swift in Sources */,
 				8E67ED7D205EA6D500D3A57F /* PropertyObservable.swift in Sources */,
+				8E1042B92663C9F500CBD263 /* Comparable+Clamped.swift in Sources */,
 				8EAD8F41205484EA00E8804F /* AsyncOperation.swift in Sources */,
 				8EF90C1F24D049DD00C0361A /* Store+SwiftUI.swift in Sources */,
 				8E801DE12095159A00E5424A /* UnfairLock.swift in Sources */,
@@ -735,6 +767,7 @@
 				8E67ED87205EA8A300D3A57F /* PropertyObservableTests.swift in Sources */,
 				8EAD8F5520548C2800E8804F /* OperationGroupTests.swift in Sources */,
 				8EAD8F5120548BAF00E8804F /* AsyncOperationTests.swift in Sources */,
+				8E1042BF2663CA5C00CBD263 /* Comparable+ClampedTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -748,6 +781,7 @@
 				8E4D45722095F55200FBA348 /* MutexLockTests.swift in Sources */,
 				8E67ED88205EA8A400D3A57F /* PropertyObservableTests.swift in Sources */,
 				8EFC4DC8207AADD100630DC4 /* UIColorHexTests.swift in Sources */,
+				8E1042C02663CA5C00CBD263 /* Comparable+ClampedTests.swift in Sources */,
 				8EAD8F5620548C2800E8804F /* OperationGroupTests.swift in Sources */,
 				8EAD8F5220548BAF00E8804F /* AsyncOperationTests.swift in Sources */,
 				8EE96E0E24C725FF00D83DF6 /* StoreTests.swift in Sources */,
@@ -798,6 +832,7 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
@@ -823,7 +858,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				MACOSX_DEPLOYMENT_TARGET = 10.12;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -831,7 +866,7 @@
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TVOS_DEPLOYMENT_TARGET = 10.0;
+				TVOS_DEPLOYMENT_TARGET = 12.0;
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 				WATCHOS_DEPLOYMENT_TARGET = 5.0;
@@ -861,6 +896,7 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
@@ -880,13 +916,13 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				MACOSX_DEPLOYMENT_TARGET = 10.12;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TVOS_DEPLOYMENT_TARGET = 10.0;
+				TVOS_DEPLOYMENT_TARGET = 12.0;
 				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";

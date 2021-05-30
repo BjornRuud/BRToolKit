@@ -46,7 +46,7 @@ public final class PropertyObserver {
  Enables property observation. All functions have default implementations so just add the
  protocol to the class and you're done.
  */
-public protocol PropertyObservable: class {
+public protocol PropertyObservable: AnyObject {
     /**
      Register an observation closure for a property event on this object.
 
