@@ -21,7 +21,7 @@ class AsyncOperation: Operation {
     // The completionBlock property has unexpected behaviors such as
     // executing twice and executing on unexpected threads.
     @available(*, deprecated, message: "Use `completion` instead")
-    override var completionBlock: (() -> Void)? {
+    override var completionBlock: (@Sendable () -> Void)? {
         set {
             fatalError("The completionBlock property on NSOperation has unexpected behavior and is not supported 😈")
         }

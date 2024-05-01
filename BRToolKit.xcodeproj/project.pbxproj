@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 47;
+	objectVersion = 54;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -15,6 +15,13 @@
 		8E1042BE2663CA5C00CBD263 /* Comparable+ClampedTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E1042BD2663CA5C00CBD263 /* Comparable+ClampedTests.swift */; };
 		8E1042BF2663CA5C00CBD263 /* Comparable+ClampedTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E1042BD2663CA5C00CBD263 /* Comparable+ClampedTests.swift */; };
 		8E1042C02663CA5C00CBD263 /* Comparable+ClampedTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E1042BD2663CA5C00CBD263 /* Comparable+ClampedTests.swift */; };
+		8E21604125C6CF4D00AE2EFA /* AppSetting.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E21604025C6CF4D00AE2EFA /* AppSetting.swift */; };
+		8E21604225C6CF4D00AE2EFA /* AppSetting.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E21604025C6CF4D00AE2EFA /* AppSetting.swift */; };
+		8E21604325C6CF4D00AE2EFA /* AppSetting.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E21604025C6CF4D00AE2EFA /* AppSetting.swift */; };
+		8E21604425C6CF4D00AE2EFA /* AppSetting.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E21604025C6CF4D00AE2EFA /* AppSetting.swift */; };
+		8E21604D25C6F37A00AE2EFA /* AppSettingTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E21604C25C6F37A00AE2EFA /* AppSettingTests.swift */; };
+		8E21604E25C6F37A00AE2EFA /* AppSettingTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E21604C25C6F37A00AE2EFA /* AppSettingTests.swift */; };
+		8E21604F25C6F37A00AE2EFA /* AppSettingTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E21604C25C6F37A00AE2EFA /* AppSettingTests.swift */; };
 		8E32425720798C2A0037481F /* UIColor+Hex.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E32425620798C2A0037481F /* UIColor+Hex.swift */; };
 		8E32425820798C2A0037481F /* UIColor+Hex.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E32425620798C2A0037481F /* UIColor+Hex.swift */; };
 		8E32425920798C2A0037481F /* UIColor+Hex.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E32425620798C2A0037481F /* UIColor+Hex.swift */; };
@@ -44,6 +51,10 @@
 		8E801DEB20951FC400E5424A /* MutexLock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E801DE920951FC400E5424A /* MutexLock.swift */; };
 		8E801DEC20951FC400E5424A /* MutexLock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E801DE920951FC400E5424A /* MutexLock.swift */; };
 		8E801DED20951FC400E5424A /* MutexLock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E801DE920951FC400E5424A /* MutexLock.swift */; };
+		8E8472E42BE28DBD00F4D90F /* ContinuousObservation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E8472E32BE28DBD00F4D90F /* ContinuousObservation.swift */; };
+		8E8472E52BE28DBD00F4D90F /* ContinuousObservation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E8472E32BE28DBD00F4D90F /* ContinuousObservation.swift */; };
+		8E8472E62BE28DBD00F4D90F /* ContinuousObservation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E8472E32BE28DBD00F4D90F /* ContinuousObservation.swift */; };
+		8E8472E72BE28DBD00F4D90F /* ContinuousObservation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E8472E32BE28DBD00F4D90F /* ContinuousObservation.swift */; };
 		8EAD8F40205484EA00E8804F /* AsyncOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EAD8F3F205484EA00E8804F /* AsyncOperation.swift */; };
 		8EAD8F41205484EA00E8804F /* AsyncOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EAD8F3F205484EA00E8804F /* AsyncOperation.swift */; };
 		8EAD8F42205484EA00E8804F /* AsyncOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EAD8F3F205484EA00E8804F /* AsyncOperation.swift */; };
@@ -121,6 +132,8 @@
 		52D6DA0F1BF000BD002C0205 /* BRToolKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = BRToolKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8E1042B72663C9F500CBD263 /* Comparable+Clamped.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Comparable+Clamped.swift"; sourceTree = "<group>"; };
 		8E1042BD2663CA5C00CBD263 /* Comparable+ClampedTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Comparable+ClampedTests.swift"; sourceTree = "<group>"; };
+		8E21604025C6CF4D00AE2EFA /* AppSetting.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppSetting.swift; sourceTree = "<group>"; };
+		8E21604C25C6F37A00AE2EFA /* AppSettingTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppSettingTests.swift; sourceTree = "<group>"; };
 		8E32425620798C2A0037481F /* UIColor+Hex.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Hex.swift"; sourceTree = "<group>"; };
 		8E4D456B2095EEA600FBA348 /* UnfairLockTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UnfairLockTests.swift; sourceTree = "<group>"; };
 		8E4D456F2095F55200FBA348 /* MutexLockTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MutexLockTests.swift; sourceTree = "<group>"; };
@@ -129,6 +142,7 @@
 		8E801DDF2095159A00E5424A /* UnfairLock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UnfairLock.swift; sourceTree = "<group>"; };
 		8E801DE420951F8100E5424A /* Lockable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Lockable.swift; sourceTree = "<group>"; };
 		8E801DE920951FC400E5424A /* MutexLock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MutexLock.swift; sourceTree = "<group>"; };
+		8E8472E32BE28DBD00F4D90F /* ContinuousObservation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContinuousObservation.swift; sourceTree = "<group>"; };
 		8EAD8F3F205484EA00E8804F /* AsyncOperation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AsyncOperation.swift; sourceTree = "<group>"; };
 		8EAD8F442054880800E8804F /* OperationGroup.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OperationGroup.swift; sourceTree = "<group>"; };
 		8EAD8F492054881700E8804F /* OperationSequence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OperationSequence.swift; sourceTree = "<group>"; };
@@ -239,7 +253,9 @@
 		8933C7811EB5B7E0000D00A4 /* Sources */ = {
 			isa = PBXGroup;
 			children = (
+				8E21603F25C6CF1900AE2EFA /* AppSetting */,
 				8E32425520798BF20037481F /* Color */,
+				8E8472E22BE28D9200F4D90F /* ContinuousObservation */,
 				8E1042B62663C9BC00CBD263 /* Extensions */,
 				8EAD8F3E2054841800E8804F /* Operation */,
 				8E67ED7A205EA67900D3A57F /* PropertyObservable */,
@@ -277,6 +293,15 @@
 				8E1042BD2663CA5C00CBD263 /* Comparable+ClampedTests.swift */,
 			);
 			path = Extensions;
+			sourceTree = "<group>";
+		};
+		8E21603F25C6CF1900AE2EFA /* AppSetting */ = {
+			isa = PBXGroup;
+			children = (
+				8E21604025C6CF4D00AE2EFA /* AppSetting.swift */,
+				8E21604C25C6F37A00AE2EFA /* AppSettingTests.swift */,
+			);
+			path = AppSetting;
 			sourceTree = "<group>";
 		};
 		8E32425520798BF20037481F /* Color */ = {
@@ -320,6 +345,14 @@
 				8E801DDF2095159A00E5424A /* UnfairLock.swift */,
 			);
 			path = Synchronization;
+			sourceTree = "<group>";
+		};
+		8E8472E22BE28D9200F4D90F /* ContinuousObservation */ = {
+			isa = PBXGroup;
+			children = (
+				8E8472E32BE28DBD00F4D90F /* ContinuousObservation.swift */,
+			);
+			path = ContinuousObservation;
 			sourceTree = "<group>";
 		};
 		8EAD8F3E2054841800E8804F /* Operation */ = {
@@ -551,8 +584,9 @@
 		52D6D9731BEFF229002C0205 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				BuildIndependentTargetsInParallel = YES;
 				LastSwiftUpdateCheck = 0720;
-				LastUpgradeCheck = 1250;
+				LastUpgradeCheck = 1530;
 				ORGANIZATIONNAME = BRToolKit;
 				TargetAttributes = {
 					52D6D97B1BEFF229002C0205 = {
@@ -667,8 +701,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				8EAD8F4A2054881700E8804F /* OperationSequence.swift in Sources */,
+				8E8472E42BE28DBD00F4D90F /* ContinuousObservation.swift in Sources */,
 				8E67ED7C205EA6D500D3A57F /* PropertyObservable.swift in Sources */,
 				8E1042B82663C9F500CBD263 /* Comparable+Clamped.swift in Sources */,
+				8E21604125C6CF4D00AE2EFA /* AppSetting.swift in Sources */,
 				8EAD8F40205484EA00E8804F /* AsyncOperation.swift in Sources */,
 				8EF90C1E24D049DD00C0361A /* Store+SwiftUI.swift in Sources */,
 				8E801DE02095159A00E5424A /* UnfairLock.swift in Sources */,
@@ -687,6 +723,7 @@
 			files = (
 				8EAD8F5820548C8400E8804F /* OperationSequenceTests.swift in Sources */,
 				8E4D456C2095EEA600FBA348 /* UnfairLockTests.swift in Sources */,
+				8E21604D25C6F37A00AE2EFA /* AppSettingTests.swift in Sources */,
 				8EE96E0824C71F4100D83DF6 /* ReducerTests.swift in Sources */,
 				8E4D45702095F55200FBA348 /* MutexLockTests.swift in Sources */,
 				8E67ED86205EA8A300D3A57F /* PropertyObservableTests.swift in Sources */,
@@ -703,8 +740,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				8EAD8F4C2054881700E8804F /* OperationSequence.swift in Sources */,
+				8E8472E62BE28DBD00F4D90F /* ContinuousObservation.swift in Sources */,
 				8E67ED7E205EA6D500D3A57F /* PropertyObservable.swift in Sources */,
 				8E1042BA2663C9F500CBD263 /* Comparable+Clamped.swift in Sources */,
+				8E21604325C6CF4D00AE2EFA /* AppSetting.swift in Sources */,
 				8EAD8F42205484EA00E8804F /* AsyncOperation.swift in Sources */,
 				8EF90C2024D049DD00C0361A /* Store+SwiftUI.swift in Sources */,
 				8E801DE22095159A00E5424A /* UnfairLock.swift in Sources */,
@@ -722,8 +761,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				8EAD8F4D2054881700E8804F /* OperationSequence.swift in Sources */,
+				8E8472E72BE28DBD00F4D90F /* ContinuousObservation.swift in Sources */,
 				8E67ED7F205EA6D500D3A57F /* PropertyObservable.swift in Sources */,
 				8E1042BB2663C9F500CBD263 /* Comparable+Clamped.swift in Sources */,
+				8E21604425C6CF4D00AE2EFA /* AppSetting.swift in Sources */,
 				8EAD8F43205484EA00E8804F /* AsyncOperation.swift in Sources */,
 				8EF90C2124D049DD00C0361A /* Store+SwiftUI.swift in Sources */,
 				8E801DE32095159A00E5424A /* UnfairLock.swift in Sources */,
@@ -741,8 +782,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				8EAD8F4B2054881700E8804F /* OperationSequence.swift in Sources */,
+				8E8472E52BE28DBD00F4D90F /* ContinuousObservation.swift in Sources */,
 				8E67ED7D205EA6D500D3A57F /* PropertyObservable.swift in Sources */,
 				8E1042B92663C9F500CBD263 /* Comparable+Clamped.swift in Sources */,
+				8E21604225C6CF4D00AE2EFA /* AppSetting.swift in Sources */,
 				8EAD8F41205484EA00E8804F /* AsyncOperation.swift in Sources */,
 				8EF90C1F24D049DD00C0361A /* Store+SwiftUI.swift in Sources */,
 				8E801DE12095159A00E5424A /* UnfairLock.swift in Sources */,
@@ -762,6 +805,7 @@
 				8EAD8F5920548C8400E8804F /* OperationSequenceTests.swift in Sources */,
 				8E4D456D2095EEA600FBA348 /* UnfairLockTests.swift in Sources */,
 				8EE96E0924C71F4100D83DF6 /* ReducerTests.swift in Sources */,
+				8E21604E25C6F37A00AE2EFA /* AppSettingTests.swift in Sources */,
 				8EE96E0D24C725FF00D83DF6 /* StoreTests.swift in Sources */,
 				8E4D45712095F55200FBA348 /* MutexLockTests.swift in Sources */,
 				8E67ED87205EA8A300D3A57F /* PropertyObservableTests.swift in Sources */,
@@ -777,6 +821,7 @@
 			files = (
 				8EAD8F5A20548C8400E8804F /* OperationSequenceTests.swift in Sources */,
 				8E4D456E2095EEA600FBA348 /* UnfairLockTests.swift in Sources */,
+				8E21604F25C6F37A00AE2EFA /* AppSettingTests.swift in Sources */,
 				8EE96E0A24C71F4100D83DF6 /* ReducerTests.swift in Sources */,
 				8E4D45722095F55200FBA348 /* MutexLockTests.swift in Sources */,
 				8E67ED88205EA8A400D3A57F /* PropertyObservableTests.swift in Sources */,
@@ -813,6 +858,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
 				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
@@ -844,6 +890,7 @@
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -877,6 +924,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
 				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
@@ -908,6 +956,7 @@
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
@@ -935,14 +984,21 @@
 			buildSettings = {
 				APPLICATION_EXTENSION_API_ONLY = YES;
 				CLANG_ENABLE_MODULES = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				CODE_SIGN_IDENTITY = "";
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_MODULE_VERIFIER = YES;
 				INFOPLIST_FILE = Configs/BRToolKit.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = "$(RECOMMENDED_MACOSX_DEPLOYMENT_TARGET)";
+				MODULE_VERIFIER_SUPPORTED_LANGUAGE_STANDARDS = "gnu99 gnu++11";
 				ONLY_ACTIVE_ARCH = NO;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.BRToolKit.BRToolKit-iOS";
 				PRODUCT_NAME = BRToolKit;
@@ -956,18 +1012,26 @@
 			buildSettings = {
 				APPLICATION_EXTENSION_API_ONLY = YES;
 				CLANG_ENABLE_MODULES = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				CODE_SIGN_IDENTITY = "";
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_MODULE_VERIFIER = YES;
 				INFOPLIST_FILE = Configs/BRToolKit.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = "$(RECOMMENDED_MACOSX_DEPLOYMENT_TARGET)";
+				MODULE_VERIFIER_SUPPORTED_LANGUAGE_STANDARDS = "gnu99 gnu++11";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.BRToolKit.BRToolKit-iOS";
 				PRODUCT_NAME = BRToolKit;
 				SKIP_INSTALL = YES;
-				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
 			};
 			name = Release;
 		};
@@ -977,7 +1041,12 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = Configs/BRToolKitTests.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = "$(RECOMMENDED_MACOSX_DEPLOYMENT_TARGET)";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.BRToolKit.BRToolKit-iOS-Tests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
@@ -990,10 +1059,16 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = Configs/BRToolKitTests.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = "$(RECOMMENDED_MACOSX_DEPLOYMENT_TARGET)";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.BRToolKit.BRToolKit-iOS-Tests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
 			};
 			name = Release;
 		};
@@ -1002,14 +1077,21 @@
 			buildSettings = {
 				APPLICATION_EXTENSION_API_ONLY = YES;
 				CLANG_ENABLE_MODULES = YES;
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CODE_SIGN_IDENTITY = "";
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_MODULE_VERIFIER = YES;
 				INFOPLIST_FILE = Configs/BRToolKit.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = "$(RECOMMENDED_MACOSX_DEPLOYMENT_TARGET)";
+				MODULE_VERIFIER_SUPPORTED_LANGUAGE_STANDARDS = "gnu99 gnu++11";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.BRToolKit.BRToolKit-watchOS";
 				PRODUCT_NAME = BRToolKit;
 				SDKROOT = watchos;
@@ -1024,19 +1106,27 @@
 			buildSettings = {
 				APPLICATION_EXTENSION_API_ONLY = YES;
 				CLANG_ENABLE_MODULES = YES;
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CODE_SIGN_IDENTITY = "";
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_MODULE_VERIFIER = YES;
 				INFOPLIST_FILE = Configs/BRToolKit.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = "$(RECOMMENDED_MACOSX_DEPLOYMENT_TARGET)";
+				MODULE_VERIFIER_SUPPORTED_LANGUAGE_STANDARDS = "gnu99 gnu++11";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.BRToolKit.BRToolKit-watchOS";
 				PRODUCT_NAME = BRToolKit;
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
-				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
 				TARGETED_DEVICE_FAMILY = 4;
 			};
 			name = Release;
@@ -1046,14 +1136,21 @@
 			buildSettings = {
 				APPLICATION_EXTENSION_API_ONLY = YES;
 				CLANG_ENABLE_MODULES = YES;
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				CODE_SIGN_IDENTITY = "";
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_MODULE_VERIFIER = YES;
 				INFOPLIST_FILE = Configs/BRToolKit.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = "$(RECOMMENDED_MACOSX_DEPLOYMENT_TARGET)";
+				MODULE_VERIFIER_SUPPORTED_LANGUAGE_STANDARDS = "gnu99 gnu++11";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.BRToolKit.BRToolKit-tvOS";
 				PRODUCT_NAME = BRToolKit;
 				SDKROOT = appletvos;
@@ -1068,19 +1165,27 @@
 			buildSettings = {
 				APPLICATION_EXTENSION_API_ONLY = YES;
 				CLANG_ENABLE_MODULES = YES;
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				CODE_SIGN_IDENTITY = "";
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_MODULE_VERIFIER = YES;
 				INFOPLIST_FILE = Configs/BRToolKit.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = "$(RECOMMENDED_MACOSX_DEPLOYMENT_TARGET)";
+				MODULE_VERIFIER_SUPPORTED_LANGUAGE_STANDARDS = "gnu99 gnu++11";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.BRToolKit.BRToolKit-tvOS";
 				PRODUCT_NAME = BRToolKit;
 				SDKROOT = appletvos;
 				SKIP_INSTALL = YES;
-				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
 				TARGETED_DEVICE_FAMILY = 3;
 			};
 			name = Release;
@@ -1092,14 +1197,22 @@
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "-";
 				COMBINE_HIDPI_IMAGES = YES;
+				DEAD_CODE_STRIPPING = YES;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_MODULE_VERIFIER = YES;
 				FRAMEWORK_VERSION = A;
 				INFOPLIST_FILE = Configs/BRToolKit.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = "$(RECOMMENDED_MACOSX_DEPLOYMENT_TARGET)";
+				MODULE_VERIFIER_SUPPORTED_LANGUAGE_STANDARDS = "gnu99 gnu++11";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.BRToolKit.BRToolKit-macOS";
 				PRODUCT_NAME = BRToolKit;
 				SDKROOT = macosx;
@@ -1115,19 +1228,28 @@
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "-";
 				COMBINE_HIDPI_IMAGES = YES;
+				DEAD_CODE_STRIPPING = YES;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_MODULE_VERIFIER = YES;
 				FRAMEWORK_VERSION = A;
 				INFOPLIST_FILE = Configs/BRToolKit.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = "$(RECOMMENDED_MACOSX_DEPLOYMENT_TARGET)";
+				MODULE_VERIFIER_SUPPORTED_LANGUAGE_STANDARDS = "gnu99 gnu++11";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.BRToolKit.BRToolKit-macOS";
 				PRODUCT_NAME = BRToolKit;
 				SDKROOT = macosx;
 				SKIP_INSTALL = YES;
-				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
 			};
 			name = Release;
 		};
@@ -1137,8 +1259,14 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_IDENTITY = "-";
 				COMBINE_HIDPI_IMAGES = YES;
+				DEAD_CODE_STRIPPING = YES;
 				INFOPLIST_FILE = Configs/BRToolKitTests.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = "$(RECOMMENDED_MACOSX_DEPLOYMENT_TARGET)";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.BRToolKit.BRToolKit-macOS-Tests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = macosx;
@@ -1151,12 +1279,19 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_IDENTITY = "-";
 				COMBINE_HIDPI_IMAGES = YES;
+				DEAD_CODE_STRIPPING = YES;
 				INFOPLIST_FILE = Configs/BRToolKitTests.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = "$(RECOMMENDED_MACOSX_DEPLOYMENT_TARGET)";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.BRToolKit.BRToolKit-macOS-Tests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = macosx;
-				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
 			};
 			name = Release;
 		};
@@ -1165,7 +1300,12 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				INFOPLIST_FILE = Configs/BRToolKitTests.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = "$(RECOMMENDED_MACOSX_DEPLOYMENT_TARGET)";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.BRToolKit.BRToolKit-tvOS-Tests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = appletvos;
@@ -1177,11 +1317,17 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				INFOPLIST_FILE = Configs/BRToolKitTests.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = "$(RECOMMENDED_MACOSX_DEPLOYMENT_TARGET)";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.BRToolKit.BRToolKit-tvOS-Tests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = appletvos;
-				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
 			};
 			name = Release;
 		};
