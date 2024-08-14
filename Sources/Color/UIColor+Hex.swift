@@ -78,9 +78,9 @@ public extension UIColor {
         let hexEnd = hexString.index(hexBegin, offsetBy: hexRange.length)
         let hex = String(hexString[hexBegin ..< hexEnd])
 
-        var hexInt: UInt32 = 0
+        var hexInt: UInt64 = 0
         let scanner = Scanner(string: hex)
-        scanner.scanHexInt32(&hexInt)
+        scanner.scanHexInt64(&hexInt)
 
         let withAlpha = hex.count > 6
         if !withAlpha {

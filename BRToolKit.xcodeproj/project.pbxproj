@@ -84,6 +84,10 @@
 		8EBC5800248588A10066D7C6 /* Store.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EBC57FE248588A10066D7C6 /* Store.swift */; };
 		8EBC5801248588A10066D7C6 /* Store.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EBC57FE248588A10066D7C6 /* Store.swift */; };
 		8EBC5802248588A10066D7C6 /* Store.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EBC57FE248588A10066D7C6 /* Store.swift */; };
+		8EC77D822C6CE24A00BED3BF /* SHAHasher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EC77D812C6CE24A00BED3BF /* SHAHasher.swift */; };
+		8EC77D832C6CE24A00BED3BF /* SHAHasher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EC77D812C6CE24A00BED3BF /* SHAHasher.swift */; };
+		8EC77D842C6CE24A00BED3BF /* SHAHasher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EC77D812C6CE24A00BED3BF /* SHAHasher.swift */; };
+		8EC77D852C6CE24A00BED3BF /* SHAHasher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EC77D812C6CE24A00BED3BF /* SHAHasher.swift */; };
 		8EE96E0824C71F4100D83DF6 /* ReducerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EE96E0724C71F4100D83DF6 /* ReducerTests.swift */; };
 		8EE96E0924C71F4100D83DF6 /* ReducerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EE96E0724C71F4100D83DF6 /* ReducerTests.swift */; };
 		8EE96E0A24C71F4100D83DF6 /* ReducerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EE96E0724C71F4100D83DF6 /* ReducerTests.swift */; };
@@ -151,6 +155,7 @@
 		8EAD8F5720548C8400E8804F /* OperationSequenceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OperationSequenceTests.swift; sourceTree = "<group>"; };
 		8EB133C424A780780040B269 /* Reducer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Reducer.swift; sourceTree = "<group>"; };
 		8EBC57FE248588A10066D7C6 /* Store.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Store.swift; sourceTree = "<group>"; };
+		8EC77D812C6CE24A00BED3BF /* SHAHasher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SHAHasher.swift; sourceTree = "<group>"; };
 		8EE96E0724C71F4100D83DF6 /* ReducerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReducerTests.swift; sourceTree = "<group>"; };
 		8EE96E0B24C725FF00D83DF6 /* StoreTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoreTests.swift; sourceTree = "<group>"; };
 		8EF90C1D24D049DD00C0361A /* Store+SwiftUI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Store+SwiftUI.swift"; sourceTree = "<group>"; };
@@ -256,6 +261,7 @@
 				8E21603F25C6CF1900AE2EFA /* AppSetting */,
 				8E32425520798BF20037481F /* Color */,
 				8E8472E22BE28D9200F4D90F /* ContinuousObservation */,
+				8EC77D802C6CE22200BED3BF /* Cryptography */,
 				8E1042B62663C9BC00CBD263 /* Extensions */,
 				8EAD8F3E2054841800E8804F /* Operation */,
 				8E67ED7A205EA67900D3A57F /* PropertyObservable */,
@@ -383,6 +389,14 @@
 				8EF90C1D24D049DD00C0361A /* Store+SwiftUI.swift */,
 			);
 			path = State;
+			sourceTree = "<group>";
+		};
+		8EC77D802C6CE22200BED3BF /* Cryptography */ = {
+			isa = PBXGroup;
+			children = (
+				8EC77D812C6CE24A00BED3BF /* SHAHasher.swift */,
+			);
+			path = Cryptography;
 			sourceTree = "<group>";
 		};
 		8EE96E0624C71F1100D83DF6 /* State */ = {
@@ -586,7 +600,7 @@
 			attributes = {
 				BuildIndependentTargetsInParallel = YES;
 				LastSwiftUpdateCheck = 0720;
-				LastUpgradeCheck = 1530;
+				LastUpgradeCheck = 1540;
 				ORGANIZATIONNAME = BRToolKit;
 				TargetAttributes = {
 					52D6D97B1BEFF229002C0205 = {
@@ -711,6 +725,7 @@
 				8EBC57FF248588A10066D7C6 /* Store.swift in Sources */,
 				8EAD8F452054880800E8804F /* OperationGroup.swift in Sources */,
 				8E801DE520951F8100E5424A /* Lockable.swift in Sources */,
+				8EC77D822C6CE24A00BED3BF /* SHAHasher.swift in Sources */,
 				8E801DEA20951FC400E5424A /* MutexLock.swift in Sources */,
 				8EB133C524A780780040B269 /* Reducer.swift in Sources */,
 				8E32425720798C2A0037481F /* UIColor+Hex.swift in Sources */,
@@ -750,6 +765,7 @@
 				8EBC5801248588A10066D7C6 /* Store.swift in Sources */,
 				8EAD8F472054880800E8804F /* OperationGroup.swift in Sources */,
 				8E801DE720951F8100E5424A /* Lockable.swift in Sources */,
+				8EC77D842C6CE24A00BED3BF /* SHAHasher.swift in Sources */,
 				8E801DEC20951FC400E5424A /* MutexLock.swift in Sources */,
 				8EB133C724A780780040B269 /* Reducer.swift in Sources */,
 				8E32425920798C2A0037481F /* UIColor+Hex.swift in Sources */,
@@ -771,6 +787,7 @@
 				8EBC5802248588A10066D7C6 /* Store.swift in Sources */,
 				8EAD8F482054880800E8804F /* OperationGroup.swift in Sources */,
 				8E801DE820951F8100E5424A /* Lockable.swift in Sources */,
+				8EC77D852C6CE24A00BED3BF /* SHAHasher.swift in Sources */,
 				8E801DED20951FC400E5424A /* MutexLock.swift in Sources */,
 				8EB133C824A780780040B269 /* Reducer.swift in Sources */,
 				8E32425A20798C2A0037481F /* UIColor+Hex.swift in Sources */,
@@ -792,6 +809,7 @@
 				8EBC5800248588A10066D7C6 /* Store.swift in Sources */,
 				8EAD8F462054880800E8804F /* OperationGroup.swift in Sources */,
 				8E801DE620951F8100E5424A /* Lockable.swift in Sources */,
+				8EC77D832C6CE24A00BED3BF /* SHAHasher.swift in Sources */,
 				8E801DEB20951FC400E5424A /* MutexLock.swift in Sources */,
 				8EB133C624A780780040B269 /* Reducer.swift in Sources */,
 				8E32425820798C2A0037481F /* UIColor+Hex.swift in Sources */,
@@ -905,18 +923,18 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
-				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.6;
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TVOS_DEPLOYMENT_TARGET = 12.0;
+				TVOS_DEPLOYMENT_TARGET = 13.4;
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
-				WATCHOS_DEPLOYMENT_TARGET = 5.0;
+				WATCHOS_DEPLOYMENT_TARGET = 6.2;
 			};
 			name = Debug;
 		};
@@ -965,17 +983,17 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
-				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.6;
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TVOS_DEPLOYMENT_TARGET = 12.0;
+				TVOS_DEPLOYMENT_TARGET = 13.4;
 				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
-				WATCHOS_DEPLOYMENT_TARGET = 5.0;
+				WATCHOS_DEPLOYMENT_TARGET = 6.2;
 			};
 			name = Release;
 		};
