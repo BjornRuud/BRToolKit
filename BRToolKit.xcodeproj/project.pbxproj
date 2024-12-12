@@ -23,10 +23,6 @@
 		8E8472E52BE28DBD00F4D90F /* ContinuousObservation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E8472E32BE28DBD00F4D90F /* ContinuousObservation.swift */; };
 		8E8472E62BE28DBD00F4D90F /* ContinuousObservation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E8472E32BE28DBD00F4D90F /* ContinuousObservation.swift */; };
 		8E8472E72BE28DBD00F4D90F /* ContinuousObservation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E8472E32BE28DBD00F4D90F /* ContinuousObservation.swift */; };
-		8EC77D822C6CE24A00BED3BF /* SHAHasher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EC77D812C6CE24A00BED3BF /* SHAHasher.swift */; };
-		8EC77D832C6CE24A00BED3BF /* SHAHasher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EC77D812C6CE24A00BED3BF /* SHAHasher.swift */; };
-		8EC77D842C6CE24A00BED3BF /* SHAHasher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EC77D812C6CE24A00BED3BF /* SHAHasher.swift */; };
-		8EC77D852C6CE24A00BED3BF /* SHAHasher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EC77D812C6CE24A00BED3BF /* SHAHasher.swift */; };
 		8EFC4DC6207AADD100630DC4 /* UIColorHexTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EFC4DC5207AADD100630DC4 /* UIColorHexTests.swift */; };
 		8EFC4DC8207AADD100630DC4 /* UIColorHexTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EFC4DC5207AADD100630DC4 /* UIColorHexTests.swift */; };
 		DD7502881C68FEDE006590AF /* BRToolKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 52D6DA0F1BF000BD002C0205 /* BRToolKit.framework */; };
@@ -69,7 +65,6 @@
 		8E8472E32BE28DBD00F4D90F /* ContinuousObservation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContinuousObservation.swift; sourceTree = "<group>"; };
 		8EC65BE92D0B054A004729EF /* Package.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Package.swift; sourceTree = "<group>"; };
 		8EC65BEA2D0B054A004729EF /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
-		8EC77D812C6CE24A00BED3BF /* SHAHasher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SHAHasher.swift; sourceTree = "<group>"; };
 		8EFC4DC5207AADD100630DC4 /* UIColorHexTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColorHexTests.swift; sourceTree = "<group>"; };
 		AD2FAA261CD0B6D800659CF4 /* BRToolKit.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = BRToolKit.plist; sourceTree = "<group>"; };
 		AD2FAA281CD0B6E100659CF4 /* BRToolKitTests.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = BRToolKitTests.plist; sourceTree = "<group>"; };
@@ -173,7 +168,6 @@
 			children = (
 				8E32425520798BF20037481F /* Color */,
 				8E8472E22BE28D9200F4D90F /* ContinuousObservation */,
-				8EC77D802C6CE22200BED3BF /* Cryptography */,
 				8E1042B62663C9BC00CBD263 /* Extensions */,
 			);
 			path = Sources;
@@ -219,14 +213,6 @@
 				8E8472E32BE28DBD00F4D90F /* ContinuousObservation.swift */,
 			);
 			path = ContinuousObservation;
-			sourceTree = "<group>";
-		};
-		8EC77D802C6CE22200BED3BF /* Cryptography */ = {
-			isa = PBXGroup;
-			children = (
-				8EC77D812C6CE24A00BED3BF /* SHAHasher.swift */,
-			);
-			path = Cryptography;
 			sourceTree = "<group>";
 		};
 		8EFC4DC4207AADAB00630DC4 /* Color */ = {
@@ -537,7 +523,6 @@
 			files = (
 				8E8472E42BE28DBD00F4D90F /* ContinuousObservation.swift in Sources */,
 				8E1042B82663C9F500CBD263 /* Comparable+Clamped.swift in Sources */,
-				8EC77D822C6CE24A00BED3BF /* SHAHasher.swift in Sources */,
 				8E32425720798C2A0037481F /* UIColor+Hex.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -557,7 +542,6 @@
 			files = (
 				8E8472E62BE28DBD00F4D90F /* ContinuousObservation.swift in Sources */,
 				8E1042BA2663C9F500CBD263 /* Comparable+Clamped.swift in Sources */,
-				8EC77D842C6CE24A00BED3BF /* SHAHasher.swift in Sources */,
 				8E32425920798C2A0037481F /* UIColor+Hex.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -568,7 +552,6 @@
 			files = (
 				8E8472E72BE28DBD00F4D90F /* ContinuousObservation.swift in Sources */,
 				8E1042BB2663C9F500CBD263 /* Comparable+Clamped.swift in Sources */,
-				8EC77D852C6CE24A00BED3BF /* SHAHasher.swift in Sources */,
 				8E32425A20798C2A0037481F /* UIColor+Hex.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -579,7 +562,6 @@
 			files = (
 				8E8472E52BE28DBD00F4D90F /* ContinuousObservation.swift in Sources */,
 				8E1042B92663C9F500CBD263 /* Comparable+Clamped.swift in Sources */,
-				8EC77D832C6CE24A00BED3BF /* SHAHasher.swift in Sources */,
 				8E32425820798C2A0037481F /* UIColor+Hex.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
