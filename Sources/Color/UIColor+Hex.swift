@@ -6,7 +6,7 @@
 //  Copyright © 2018 BRToolKit. All rights reserved.
 //
 
-#if !os(macOS)
+#if canImport(UIKit)
 import UIKit
 
 public extension UIColor {
