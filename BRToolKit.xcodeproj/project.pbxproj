@@ -23,6 +23,9 @@
 		8E8472E52BE28DBD00F4D90F /* ContinuousObservation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E8472E32BE28DBD00F4D90F /* ContinuousObservation.swift */; };
 		8E8472E62BE28DBD00F4D90F /* ContinuousObservation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E8472E32BE28DBD00F4D90F /* ContinuousObservation.swift */; };
 		8E8472E72BE28DBD00F4D90F /* ContinuousObservation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E8472E32BE28DBD00F4D90F /* ContinuousObservation.swift */; };
+		8EC65BED2D0B71B4004729EF /* ContinuousObservationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EC65BEC2D0B71AB004729EF /* ContinuousObservationTests.swift */; };
+		8EC65BEE2D0B71B4004729EF /* ContinuousObservationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EC65BEC2D0B71AB004729EF /* ContinuousObservationTests.swift */; };
+		8EC65BEF2D0B71B4004729EF /* ContinuousObservationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EC65BEC2D0B71AB004729EF /* ContinuousObservationTests.swift */; };
 		8EFC4DC6207AADD100630DC4 /* UIColorHexTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EFC4DC5207AADD100630DC4 /* UIColorHexTests.swift */; };
 		8EFC4DC8207AADD100630DC4 /* UIColorHexTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EFC4DC5207AADD100630DC4 /* UIColorHexTests.swift */; };
 		DD7502881C68FEDE006590AF /* BRToolKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 52D6DA0F1BF000BD002C0205 /* BRToolKit.framework */; };
@@ -65,6 +68,7 @@
 		8E8472E32BE28DBD00F4D90F /* ContinuousObservation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContinuousObservation.swift; sourceTree = "<group>"; };
 		8EC65BE92D0B054A004729EF /* Package.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Package.swift; sourceTree = "<group>"; };
 		8EC65BEA2D0B054A004729EF /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		8EC65BEC2D0B71AB004729EF /* ContinuousObservationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContinuousObservationTests.swift; sourceTree = "<group>"; };
 		8EFC4DC5207AADD100630DC4 /* UIColorHexTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColorHexTests.swift; sourceTree = "<group>"; };
 		AD2FAA261CD0B6D800659CF4 /* BRToolKit.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = BRToolKit.plist; sourceTree = "<group>"; };
 		AD2FAA281CD0B6E100659CF4 /* BRToolKitTests.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = BRToolKitTests.plist; sourceTree = "<group>"; };
@@ -176,6 +180,7 @@
 		8933C7831EB5B7EB000D00A4 /* Tests */ = {
 			isa = PBXGroup;
 			children = (
+				8EC65BEB2D0B7195004729EF /* ContinuousObservation */,
 				8EFC4DC4207AADAB00630DC4 /* Color */,
 				8E1042BC2663CA2E00CBD263 /* Extensions */,
 			);
@@ -211,6 +216,14 @@
 			isa = PBXGroup;
 			children = (
 				8E8472E32BE28DBD00F4D90F /* ContinuousObservation.swift */,
+			);
+			path = ContinuousObservation;
+			sourceTree = "<group>";
+		};
+		8EC65BEB2D0B7195004729EF /* ContinuousObservation */ = {
+			isa = PBXGroup;
+			children = (
+				8EC65BEC2D0B71AB004729EF /* ContinuousObservationTests.swift */,
 			);
 			path = ContinuousObservation;
 			sourceTree = "<group>";
@@ -532,6 +545,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				8EFC4DC6207AADD100630DC4 /* UIColorHexTests.swift in Sources */,
+				8EC65BED2D0B71B4004729EF /* ContinuousObservationTests.swift in Sources */,
 				8E1042BE2663CA5C00CBD263 /* Comparable+ClampedTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -570,6 +584,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8EC65BEF2D0B71B4004729EF /* ContinuousObservationTests.swift in Sources */,
 				8E1042BF2663CA5C00CBD263 /* Comparable+ClampedTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -579,6 +594,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				8EFC4DC8207AADD100630DC4 /* UIColorHexTests.swift in Sources */,
+				8EC65BEE2D0B71B4004729EF /* ContinuousObservationTests.swift in Sources */,
 				8E1042C02663CA5C00CBD263 /* Comparable+ClampedTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
