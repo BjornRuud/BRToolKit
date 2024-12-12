@@ -32,13 +32,6 @@
 		8E4D45702095F55200FBA348 /* MutexLockTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E4D456F2095F55200FBA348 /* MutexLockTests.swift */; };
 		8E4D45712095F55200FBA348 /* MutexLockTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E4D456F2095F55200FBA348 /* MutexLockTests.swift */; };
 		8E4D45722095F55200FBA348 /* MutexLockTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E4D456F2095F55200FBA348 /* MutexLockTests.swift */; };
-		8E67ED7C205EA6D500D3A57F /* PropertyObservable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E67ED7B205EA6D500D3A57F /* PropertyObservable.swift */; };
-		8E67ED7D205EA6D500D3A57F /* PropertyObservable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E67ED7B205EA6D500D3A57F /* PropertyObservable.swift */; };
-		8E67ED7E205EA6D500D3A57F /* PropertyObservable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E67ED7B205EA6D500D3A57F /* PropertyObservable.swift */; };
-		8E67ED7F205EA6D500D3A57F /* PropertyObservable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E67ED7B205EA6D500D3A57F /* PropertyObservable.swift */; };
-		8E67ED86205EA8A300D3A57F /* PropertyObservableTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E67ED81205EA87100D3A57F /* PropertyObservableTests.swift */; };
-		8E67ED87205EA8A300D3A57F /* PropertyObservableTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E67ED81205EA87100D3A57F /* PropertyObservableTests.swift */; };
-		8E67ED88205EA8A400D3A57F /* PropertyObservableTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E67ED81205EA87100D3A57F /* PropertyObservableTests.swift */; };
 		8E801DE02095159A00E5424A /* UnfairLock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E801DDF2095159A00E5424A /* UnfairLock.swift */; };
 		8E801DE12095159A00E5424A /* UnfairLock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E801DDF2095159A00E5424A /* UnfairLock.swift */; };
 		8E801DE22095159A00E5424A /* UnfairLock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E801DDF2095159A00E5424A /* UnfairLock.swift */; };
@@ -102,8 +95,6 @@
 		8E32425620798C2A0037481F /* UIColor+Hex.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Hex.swift"; sourceTree = "<group>"; };
 		8E4D456B2095EEA600FBA348 /* UnfairLockTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UnfairLockTests.swift; sourceTree = "<group>"; };
 		8E4D456F2095F55200FBA348 /* MutexLockTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MutexLockTests.swift; sourceTree = "<group>"; };
-		8E67ED7B205EA6D500D3A57F /* PropertyObservable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PropertyObservable.swift; sourceTree = "<group>"; };
-		8E67ED81205EA87100D3A57F /* PropertyObservableTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PropertyObservableTests.swift; sourceTree = "<group>"; };
 		8E801DDF2095159A00E5424A /* UnfairLock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UnfairLock.swift; sourceTree = "<group>"; };
 		8E801DE420951F8100E5424A /* Lockable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Lockable.swift; sourceTree = "<group>"; };
 		8E801DE920951FC400E5424A /* MutexLock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MutexLock.swift; sourceTree = "<group>"; };
@@ -217,7 +208,6 @@
 				8E8472E22BE28D9200F4D90F /* ContinuousObservation */,
 				8EC77D802C6CE22200BED3BF /* Cryptography */,
 				8E1042B62663C9BC00CBD263 /* Extensions */,
-				8E67ED7A205EA67900D3A57F /* PropertyObservable */,
 				8E801DDE2095157900E5424A /* Synchronization */,
 			);
 			path = Sources;
@@ -228,7 +218,6 @@
 			children = (
 				8EFC4DC4207AADAB00630DC4 /* Color */,
 				8E1042BC2663CA2E00CBD263 /* Extensions */,
-				8E67ED80205EA84400D3A57F /* PropertyObservable */,
 				8E4D456A2095EE7200FBA348 /* Synchronization */,
 			);
 			name = Tests;
@@ -275,22 +264,6 @@
 				8E4D456F2095F55200FBA348 /* MutexLockTests.swift */,
 			);
 			path = Synchronization;
-			sourceTree = "<group>";
-		};
-		8E67ED7A205EA67900D3A57F /* PropertyObservable */ = {
-			isa = PBXGroup;
-			children = (
-				8E67ED7B205EA6D500D3A57F /* PropertyObservable.swift */,
-			);
-			path = PropertyObservable;
-			sourceTree = "<group>";
-		};
-		8E67ED80205EA84400D3A57F /* PropertyObservable */ = {
-			isa = PBXGroup;
-			children = (
-				8E67ED81205EA87100D3A57F /* PropertyObservableTests.swift */,
-			);
-			path = PropertyObservable;
 			sourceTree = "<group>";
 		};
 		8E801DDE2095157900E5424A /* Synchronization */ = {
@@ -626,7 +599,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				8E8472E42BE28DBD00F4D90F /* ContinuousObservation.swift in Sources */,
-				8E67ED7C205EA6D500D3A57F /* PropertyObservable.swift in Sources */,
 				8E1042B82663C9F500CBD263 /* Comparable+Clamped.swift in Sources */,
 				8E21604125C6CF4D00AE2EFA /* AppSetting.swift in Sources */,
 				8E801DE02095159A00E5424A /* UnfairLock.swift in Sources */,
@@ -644,7 +616,6 @@
 				8E4D456C2095EEA600FBA348 /* UnfairLockTests.swift in Sources */,
 				8E21604D25C6F37A00AE2EFA /* AppSettingTests.swift in Sources */,
 				8E4D45702095F55200FBA348 /* MutexLockTests.swift in Sources */,
-				8E67ED86205EA8A300D3A57F /* PropertyObservableTests.swift in Sources */,
 				8EFC4DC6207AADD100630DC4 /* UIColorHexTests.swift in Sources */,
 				8E1042BE2663CA5C00CBD263 /* Comparable+ClampedTests.swift in Sources */,
 			);
@@ -655,7 +626,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				8E8472E62BE28DBD00F4D90F /* ContinuousObservation.swift in Sources */,
-				8E67ED7E205EA6D500D3A57F /* PropertyObservable.swift in Sources */,
 				8E1042BA2663C9F500CBD263 /* Comparable+Clamped.swift in Sources */,
 				8E21604325C6CF4D00AE2EFA /* AppSetting.swift in Sources */,
 				8E801DE22095159A00E5424A /* UnfairLock.swift in Sources */,
@@ -671,7 +641,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				8E8472E72BE28DBD00F4D90F /* ContinuousObservation.swift in Sources */,
-				8E67ED7F205EA6D500D3A57F /* PropertyObservable.swift in Sources */,
 				8E1042BB2663C9F500CBD263 /* Comparable+Clamped.swift in Sources */,
 				8E21604425C6CF4D00AE2EFA /* AppSetting.swift in Sources */,
 				8E801DE32095159A00E5424A /* UnfairLock.swift in Sources */,
@@ -687,7 +656,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				8E8472E52BE28DBD00F4D90F /* ContinuousObservation.swift in Sources */,
-				8E67ED7D205EA6D500D3A57F /* PropertyObservable.swift in Sources */,
 				8E1042B92663C9F500CBD263 /* Comparable+Clamped.swift in Sources */,
 				8E21604225C6CF4D00AE2EFA /* AppSetting.swift in Sources */,
 				8E801DE12095159A00E5424A /* UnfairLock.swift in Sources */,
@@ -705,7 +673,6 @@
 				8E4D456D2095EEA600FBA348 /* UnfairLockTests.swift in Sources */,
 				8E21604E25C6F37A00AE2EFA /* AppSettingTests.swift in Sources */,
 				8E4D45712095F55200FBA348 /* MutexLockTests.swift in Sources */,
-				8E67ED87205EA8A300D3A57F /* PropertyObservableTests.swift in Sources */,
 				8E1042BF2663CA5C00CBD263 /* Comparable+ClampedTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -717,7 +684,6 @@
 				8E4D456E2095EEA600FBA348 /* UnfairLockTests.swift in Sources */,
 				8E21604F25C6F37A00AE2EFA /* AppSettingTests.swift in Sources */,
 				8E4D45722095F55200FBA348 /* MutexLockTests.swift in Sources */,
-				8E67ED88205EA8A400D3A57F /* PropertyObservableTests.swift in Sources */,
 				8EFC4DC8207AADD100630DC4 /* UIColorHexTests.swift in Sources */,
 				8E1042C02663CA5C00CBD263 /* Comparable+ClampedTests.swift in Sources */,
 			);
