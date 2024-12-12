@@ -15,13 +15,6 @@
 		8E1042BE2663CA5C00CBD263 /* Comparable+ClampedTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E1042BD2663CA5C00CBD263 /* Comparable+ClampedTests.swift */; };
 		8E1042BF2663CA5C00CBD263 /* Comparable+ClampedTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E1042BD2663CA5C00CBD263 /* Comparable+ClampedTests.swift */; };
 		8E1042C02663CA5C00CBD263 /* Comparable+ClampedTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E1042BD2663CA5C00CBD263 /* Comparable+ClampedTests.swift */; };
-		8E21604125C6CF4D00AE2EFA /* AppSetting.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E21604025C6CF4D00AE2EFA /* AppSetting.swift */; };
-		8E21604225C6CF4D00AE2EFA /* AppSetting.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E21604025C6CF4D00AE2EFA /* AppSetting.swift */; };
-		8E21604325C6CF4D00AE2EFA /* AppSetting.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E21604025C6CF4D00AE2EFA /* AppSetting.swift */; };
-		8E21604425C6CF4D00AE2EFA /* AppSetting.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E21604025C6CF4D00AE2EFA /* AppSetting.swift */; };
-		8E21604D25C6F37A00AE2EFA /* AppSettingTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E21604C25C6F37A00AE2EFA /* AppSettingTests.swift */; };
-		8E21604E25C6F37A00AE2EFA /* AppSettingTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E21604C25C6F37A00AE2EFA /* AppSettingTests.swift */; };
-		8E21604F25C6F37A00AE2EFA /* AppSettingTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E21604C25C6F37A00AE2EFA /* AppSettingTests.swift */; };
 		8E32425720798C2A0037481F /* UIColor+Hex.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E32425620798C2A0037481F /* UIColor+Hex.swift */; };
 		8E32425820798C2A0037481F /* UIColor+Hex.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E32425620798C2A0037481F /* UIColor+Hex.swift */; };
 		8E32425920798C2A0037481F /* UIColor+Hex.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E32425620798C2A0037481F /* UIColor+Hex.swift */; };
@@ -90,8 +83,6 @@
 		52D6DA0F1BF000BD002C0205 /* BRToolKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = BRToolKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8E1042B72663C9F500CBD263 /* Comparable+Clamped.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Comparable+Clamped.swift"; sourceTree = "<group>"; };
 		8E1042BD2663CA5C00CBD263 /* Comparable+ClampedTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Comparable+ClampedTests.swift"; sourceTree = "<group>"; };
-		8E21604025C6CF4D00AE2EFA /* AppSetting.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppSetting.swift; sourceTree = "<group>"; };
-		8E21604C25C6F37A00AE2EFA /* AppSettingTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppSettingTests.swift; sourceTree = "<group>"; };
 		8E32425620798C2A0037481F /* UIColor+Hex.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Hex.swift"; sourceTree = "<group>"; };
 		8E4D456B2095EEA600FBA348 /* UnfairLockTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UnfairLockTests.swift; sourceTree = "<group>"; };
 		8E4D456F2095F55200FBA348 /* MutexLockTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MutexLockTests.swift; sourceTree = "<group>"; };
@@ -203,7 +194,6 @@
 		8933C7811EB5B7E0000D00A4 /* Sources */ = {
 			isa = PBXGroup;
 			children = (
-				8E21603F25C6CF1900AE2EFA /* AppSetting */,
 				8E32425520798BF20037481F /* Color */,
 				8E8472E22BE28D9200F4D90F /* ContinuousObservation */,
 				8EC77D802C6CE22200BED3BF /* Cryptography */,
@@ -238,15 +228,6 @@
 				8E1042BD2663CA5C00CBD263 /* Comparable+ClampedTests.swift */,
 			);
 			path = Extensions;
-			sourceTree = "<group>";
-		};
-		8E21603F25C6CF1900AE2EFA /* AppSetting */ = {
-			isa = PBXGroup;
-			children = (
-				8E21604025C6CF4D00AE2EFA /* AppSetting.swift */,
-				8E21604C25C6F37A00AE2EFA /* AppSettingTests.swift */,
-			);
-			path = AppSetting;
 			sourceTree = "<group>";
 		};
 		8E32425520798BF20037481F /* Color */ = {
@@ -600,7 +581,6 @@
 			files = (
 				8E8472E42BE28DBD00F4D90F /* ContinuousObservation.swift in Sources */,
 				8E1042B82663C9F500CBD263 /* Comparable+Clamped.swift in Sources */,
-				8E21604125C6CF4D00AE2EFA /* AppSetting.swift in Sources */,
 				8E801DE02095159A00E5424A /* UnfairLock.swift in Sources */,
 				8E801DE520951F8100E5424A /* Lockable.swift in Sources */,
 				8EC77D822C6CE24A00BED3BF /* SHAHasher.swift in Sources */,
@@ -614,7 +594,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				8E4D456C2095EEA600FBA348 /* UnfairLockTests.swift in Sources */,
-				8E21604D25C6F37A00AE2EFA /* AppSettingTests.swift in Sources */,
 				8E4D45702095F55200FBA348 /* MutexLockTests.swift in Sources */,
 				8EFC4DC6207AADD100630DC4 /* UIColorHexTests.swift in Sources */,
 				8E1042BE2663CA5C00CBD263 /* Comparable+ClampedTests.swift in Sources */,
@@ -627,7 +606,6 @@
 			files = (
 				8E8472E62BE28DBD00F4D90F /* ContinuousObservation.swift in Sources */,
 				8E1042BA2663C9F500CBD263 /* Comparable+Clamped.swift in Sources */,
-				8E21604325C6CF4D00AE2EFA /* AppSetting.swift in Sources */,
 				8E801DE22095159A00E5424A /* UnfairLock.swift in Sources */,
 				8E801DE720951F8100E5424A /* Lockable.swift in Sources */,
 				8EC77D842C6CE24A00BED3BF /* SHAHasher.swift in Sources */,
@@ -642,7 +620,6 @@
 			files = (
 				8E8472E72BE28DBD00F4D90F /* ContinuousObservation.swift in Sources */,
 				8E1042BB2663C9F500CBD263 /* Comparable+Clamped.swift in Sources */,
-				8E21604425C6CF4D00AE2EFA /* AppSetting.swift in Sources */,
 				8E801DE32095159A00E5424A /* UnfairLock.swift in Sources */,
 				8E801DE820951F8100E5424A /* Lockable.swift in Sources */,
 				8EC77D852C6CE24A00BED3BF /* SHAHasher.swift in Sources */,
@@ -657,7 +634,6 @@
 			files = (
 				8E8472E52BE28DBD00F4D90F /* ContinuousObservation.swift in Sources */,
 				8E1042B92663C9F500CBD263 /* Comparable+Clamped.swift in Sources */,
-				8E21604225C6CF4D00AE2EFA /* AppSetting.swift in Sources */,
 				8E801DE12095159A00E5424A /* UnfairLock.swift in Sources */,
 				8E801DE620951F8100E5424A /* Lockable.swift in Sources */,
 				8EC77D832C6CE24A00BED3BF /* SHAHasher.swift in Sources */,
@@ -671,7 +647,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				8E4D456D2095EEA600FBA348 /* UnfairLockTests.swift in Sources */,
-				8E21604E25C6F37A00AE2EFA /* AppSettingTests.swift in Sources */,
 				8E4D45712095F55200FBA348 /* MutexLockTests.swift in Sources */,
 				8E1042BF2663CA5C00CBD263 /* Comparable+ClampedTests.swift in Sources */,
 			);
@@ -682,7 +657,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				8E4D456E2095EEA600FBA348 /* UnfairLockTests.swift in Sources */,
-				8E21604F25C6F37A00AE2EFA /* AppSettingTests.swift in Sources */,
 				8E4D45722095F55200FBA348 /* MutexLockTests.swift in Sources */,
 				8EFC4DC8207AADD100630DC4 /* UIColorHexTests.swift in Sources */,
 				8E1042C02663CA5C00CBD263 /* Comparable+ClampedTests.swift in Sources */,
@@ -898,6 +872,7 @@
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = Configs/BRToolKitTests.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.6;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -915,6 +890,7 @@
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = Configs/BRToolKitTests.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.6;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -1125,7 +1101,7 @@
 					"@executable_path/../Frameworks",
 					"@loader_path/../Frameworks",
 				);
-				MACOSX_DEPLOYMENT_TARGET = 11.0;
+				MACOSX_DEPLOYMENT_TARGET = 13.5;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.BRToolKit.BRToolKit-macOS-Tests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = macosx;
@@ -1144,7 +1120,7 @@
 					"@executable_path/../Frameworks",
 					"@loader_path/../Frameworks",
 				);
-				MACOSX_DEPLOYMENT_TARGET = 11.0;
+				MACOSX_DEPLOYMENT_TARGET = 13.5;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.BRToolKit.BRToolKit-macOS-Tests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = macosx;
@@ -1166,6 +1142,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.BRToolKit.BRToolKit-tvOS-Tests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = appletvos;
+				TVOS_DEPLOYMENT_TARGET = 16.6;
 			};
 			name = Debug;
 		};
@@ -1184,6 +1161,7 @@
 				SDKROOT = appletvos;
 				SWIFT_COMPILATION_MODE = wholemodule;
 				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				TVOS_DEPLOYMENT_TARGET = 16.6;
 			};
 			name = Release;
 		};
